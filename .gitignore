@@ -10,26 +10,5 @@
 # software stacks here: https://github.com/github/gitignore
 # ==============================================================================
 
-# Build artifacts (but keep the README or .keep file).
-dist/*
-!dist/.keep
-!dist/README.adoc
-
-# Managed packages.
-node_modules/*
-
-# Logs.
-*.log
-
-# Test coverage.
-coverage/*
-
-# ESLint.
-.eslintcache
-
-# Terraform.
-.terraform/
-.terraform.lock.hcl
-*.tfstate
-*.tfstate.backup
-*.local.hcl
+# Build artifacts.
+dist/
