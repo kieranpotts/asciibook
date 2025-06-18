@@ -1,0 +1,7 @@
+= AsciiBook
+
+A template for generating digital books from AsciiDoc source.
+
+''''
+
+Copyright © 2020-present Kieran Potts, link:./LICENSE.txt[MIT license]
