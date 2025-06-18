@@ -1,0 +1,23 @@
+#!/bin/sh
+
+IMAGE=asciidoctor/docker-asciidoctor:1.88
+NAME=asciidoctor
+
+# Start a new Docker container in the background (detached mode, `-d`), removing any existing
+# instances of the container (`--rm`). The container is named `asciidoctor`. It is run
+# interactively (`-i`).
+#
+# The container is run under the current user and group, helping to avoid file permission issues
+# between the host and guest systems. The `-v "$(pwd -P):/data"` option mounts the current working
+# directory from which this script is executed on the host, into the container's filesystem at
+# the `/documents` path.
+#
+# The `--net=none` option disables networking for the container, isolating it from network access
+# – which is good practice for local builds.
+#
+# `/bin/sh -c "sleep infinity"` is run inside the container. This keeps the container running
+# indefinitely by executing a shell that sleeps forever, effectively running the container as a
+# daemon (background process). This setup is useful for creating a persistent environment in which
+# you can execute one-off commands (eg. build steps) quickly.
+#
+exec docker run -d --rm --name "$NAME" -i --user="$(id -u):$(id -g)" --net=none -t -v "$(pwd -P):/documents" "$IMAGE" /bin/sh -c "sleep infinity"

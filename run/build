@@ -1,20 +1,34 @@
 #!/usr/bin/env sh
-# Docker image: https://hub.docker.com/r/asciidoctor/docker-asciidoctor
-# Docker image repository: https://github.com/asciidoctor/docker-asciidoctor
 
-# The directory where the book source is located, relative to the project root.
-BOOK_SOURCE_DIR=./src
+mkdir -p dist
+rm -rf dist/*
+
+# The container name.
+NAME=asciidoctor
+
+# The directory where the book source is located,
+# relative to the project root.
+SRC_DIR=./src
 
 # The directory where the book's generated output files will be created,
 # relative to the project root.
-BOOK_BUILD_DIR=./dist
+DIST_DIR=./dist
 
-#     To override theme configuration file you can pass the following command-line arguments:
+# Run `asciidoctor-pdf` inside the `asciidoctor` container, in interactive
+# mode. See https://github.com/asciidoctor/docker-asciidoctor for options.
 #
-#    -a pdf-themesdir=$BOOK_SOURCE_DIR/themes \
-#    -a pdf-theme=$1 \
-#    -a pdf-fontsdir=$BOOK_SOURCE_DIR/fonts \
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
-    -D $BOOK_BUILD_DIR \
+docker exec -it "$NAME" asciidoctor-pdf \
+    -D $DIST_DIR \
     -o "book.pdf" \
-    $BOOK_SOURCE_DIR/index.adoc
+    $SRC_DIR/index.adoc
+
+docker exec -it "$NAME" asciidoctor-pdf \
+    -D $DIST_DIR \
+    -o "book-dark.pdf" \
+    -a pdf-theme=dark \
+    $SRC_DIR/index.adoc
+
+docker exec -it "$NAME" asciidoctor-epub3 \
+    -D $DIST_DIR \
+    -o "book.epub" \
+    $SRC_DIR/index.adoc

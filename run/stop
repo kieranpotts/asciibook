@@ -1,0 +1,5 @@
+#!/bin/sh
+
+NAME=asciidoctor
+
+docker stop "$NAME"
