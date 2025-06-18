@@ -18,11 +18,10 @@
 :description: HTML meta tag content for description
 :keywords: HTML meta tag content for keywords
 :icons: font
-:pdf-themesdir: {docdir}/themes
-:pdf-fontsdir: {docdir}/fonts
+:pdf-themesdir: {docdir}/_/themes
+:pdf-fontsdir: {docdir}/_/fonts
 :pdf-theme: basic
-:pdfmark: true
-:imagesdir: ./images
+:imagesdir: ./_/images
 :xrefstyle: short
 :source-highlighter: pygments
 :pygments-style: vs
