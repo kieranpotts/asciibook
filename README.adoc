@@ -10,15 +10,15 @@ This is a template repository for a lightweight toolchain for authoring technica
 * Use AsciiDoc for authoring books.
 * No local installation required – build tools run in Docker.
 * Generate books in HTML, PDF, and EPUB formats.
-* Output dark-themed versions.
+* Output a dark-themed PDF version.
 
 == Documentation
 
 === Requirements
 
-The only requirements are *Docker Desktop* and a good AsciiDoc editor – try VS Code with the https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoctor extension]https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode.
+The only requirements are *Docker Desktop* and a good AsciiDoc editor – try VS Code with the https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoctor extension].
 
-On Windows, it is RECOMMENDED to configure Docker to use WSL 2, and then run the build commands from WSL in a terminal running under administrator mode. Linux emulators like Git Bash are insufficient.
+On Windows, it is RECOMMENDED to configure Docker to use WSL 2, and then run the build commands from WSL in a terminal. Linux emulators like Git Bash are insufficient.
 
 The script to start the container will run the container under the current user and group. You should add your user to the `docker` group, which will allow you to run Docker commands without needing to use `sudo`.
 
@@ -52,7 +52,7 @@ $ ./run/build
 
 TIP: If you get a permissions error on the `dist` directory, delete it. The `build` script will recreate the directory with the correct permissions.
 
-The script will build the book in PDF, EPUB, and HTML formats, and place the output files in the `dist/` directory. Both light-mode and dark-mode versions of the PDF will be generated.
+The script will build the book in PDF, EPUB, and HTML formats, and place the output files in the `dist` directory. Both light-mode and dark-mode versions of the PDF will be generated.
 
 When you've finished your work, stop the container:
 
@@ -62,14 +62,14 @@ $ ./run/stop
 
 === Advanced usage
 
-If you want to run custom AsciiDoctor commands, you can shell into the container and execute custom commands interactively. The following command maps this repository's root directory to the `/documents` directory inside the container, and takes you to the container's shell environment.
+If you want to run custom AsciiDoctor commands, you can run the container in interactive mode. The following command maps this repository's root directory to the `/documents` directory inside the container, and takes you to the container's shell environment.
 
 [source,bash]
 ----
 docker run -it -v ./:/documents/ asciidoctor/docker-asciidoctor
 ----
 
-From the container's shell environment, run the following command to use {link-asciidoctor-pdf}[Asciidoctor PDF] to compile the book to PDF format:
+From the container's shell environment, run the following command to use the {link-asciidoctor-pdf}[`asciidoctor-pdf`] program to compile the book to PDF format:
 
 [source,bash]
 ----
@@ -78,12 +78,10 @@ asciidoctor-pdf -D dist -o "book.pdf" src/index.adoc
 
 See the https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Container documentation] for further documentation.
 
-Type `Ctrl`+`D` to exit from the container shell.
-
-== Acknowledgements
-
-This project started as a partial fork of https://github.com/lirantal/asciidoc-book-starter/[Liran Tal's AsciiDoc Book Starter].
+Type `Ctrl`+`D` to exit the container shell.
 
 ''''
 
 Copyright © 2020-present Kieran Potts, link:./LICENSE.txt[MIT license]
+
+This project started as a partial fork of https://github.com/lirantal/asciidoc-book-starter/[Liran Tal's AsciiDoc Book Starter].
