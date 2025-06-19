@@ -81,6 +81,10 @@ See the https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Con
 
 Type `Ctrl`+`D` to exit the container shell.
 
+=== CI/CD build
+
+There's a simple https://github.com/kieranpotts/asciibook/actions/workflows/generate-pdf.yaml[GitHub Actions workflow] that builds the book in the PDF format with the default (light) theme, and uploads the resulting PDF file as an artifact (which is retained for 5 days). The workflow is triggered manually. You can use this workflow as a starting point for your own automated build pipeline.
+
 ''''
 
 Copyright © 2020-present Kieran Potts, link:./LICENSE.txt[MIT license]
