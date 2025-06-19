@@ -1,6 +1,12 @@
 #!/bin/sh
 
+# Docker image and tag.
+# https://github.com/asciidoctor/docker-asciidoctor
+#
 IMAGE=asciidoctor/docker-asciidoctor:1.88
+
+# Custom name for the Docker container for local reference.
+#
 NAME=asciidoctor
 
 # Start a new Docker container in the background (detached mode, `-d`), removing any existing

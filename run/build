@@ -4,31 +4,60 @@ mkdir -p dist
 rm -rf dist/*
 
 # The container name.
+#
 NAME=asciidoctor
 
 # The directory where the book source is located,
 # relative to the project root.
+#
 SRC_DIR=./src
 
 # The directory where the book's generated output files will be created,
 # relative to the project root.
+#
 DIST_DIR=./dist
 
-# Run `asciidoctor-pdf` inside the `asciidoctor` container, in interactive
-# mode. See https://github.com/asciidoctor/docker-asciidoctor for options.
+# Generate PDF with default theme.
+# https://github.com/asciidoctor/asciidoctor-pdf
 #
-docker exec -it "$NAME" asciidoctor-pdf \
-    -D $DIST_DIR \
-    -o "book.pdf" \
-    $SRC_DIR/index.adoc
+docker exec -it "$NAME" \
+    asciidoctor-pdf \
+        -D $DIST_DIR \
+        -o "book.pdf" \
+            $SRC_DIR/index.adoc
 
-docker exec -it "$NAME" asciidoctor-pdf \
-    -D $DIST_DIR \
-    -o "book-dark.pdf" \
-    -a pdf-theme=dark \
-    $SRC_DIR/index.adoc
+# Generate PDF with dark theme.
+#
+docker exec -it "$NAME" \
+    asciidoctor-pdf \
+        -D $DIST_DIR \
+        -o "book-dark.pdf" \
+        -a pdf-theme=dark \
+            $SRC_DIR/index.adoc
 
-docker exec -it "$NAME" asciidoctor-epub3 \
-    -D $DIST_DIR \
-    -o "book.epub" \
-    $SRC_DIR/index.adoc
+# Generate EPUB format.
+# https://github.com/asciidoctor/asciidoctor-epub3
+#
+docker exec -it "$NAME" \
+    asciidoctor-epub3 \
+        -D $DIST_DIR \
+        -o "book.epub" \
+            $SRC_DIR/index.adoc
+
+# Generate HTML format.
+#
+# The `data-uri` attribute is used to embed images and other assets
+# directly into the HTML. This can result in large file sizes but it
+# simplifies distribution because the HTML document is self-contained
+# and portable as a standalone file. Alternatively, you can remove the
+# `-a data-uri` option, and manually bundle the image assets with the
+# distributed document.
+#
+# https://github.com/asciidoctor/asciidoctor
+#
+docker exec -it "$NAME" \
+    asciidoctor \
+        -D $DIST_DIR \
+        -o "book.html" \
+        -a data-uri \
+            $SRC_DIR/index.adoc

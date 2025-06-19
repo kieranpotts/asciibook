@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Custom name for the Docker container for local reference.
+#
 NAME=asciidoctor
 
 docker stop "$NAME"
