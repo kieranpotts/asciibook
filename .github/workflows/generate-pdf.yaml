@@ -2,9 +2,7 @@ name: generate-pdf
 run-name: "Generate PDF"
 
 on:
-  push:
-    branches:
-      - dev
+  workflow_dispatch:
 
 env:
   SRC_DIR: ${{ github.workspace }}/src
