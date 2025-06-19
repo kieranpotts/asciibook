@@ -60,10 +60,15 @@
   */
 
   /* Enable Antora support. */
-  "asciidoc.antora.showEnableAntoraPrompt": true,
+  "asciidoc.antora.showEnableAntoraPrompt": false,
 
-  /* When previewing Asciidoc files, use VS Code's workbench color theme,
-  rather than the default Asciidoc style. This ensures the colors of the
-  preview are consistent with the enabled VS Code theme. */
-  "asciidoc.preview.useEditorStyle": true,
+  /* When previewing Asciidoc files in VS Code, don't apply VS Code's workbench
+  color theme to the generated HTML... */
+  "asciidoc.preview.useEditorStyle": false,
+
+  /* ...Instead use the asciidoctors default CSS, which has been copied from
+  the following URL. This means the preview will be fairly consistent with the
+  generated HTML from the Asciidoctor CLI.
+  https://github.com/asciidoctor/asciidoctor/blob/main/src/stylesheets/asciidoctor.css */
+  "asciidoc.preview.style": "./.vscode/_/asciidoctor.css",
 }
