@@ -1,0 +1,38 @@
+name: generate-pdf
+run-name: "Generate PDF"
+
+on:
+  push:
+    branches:
+      - dev
+
+env:
+  SRC_DIR: ${{ github.workspace }}/src
+  DIST_DIR: ${{ github.workspace }}/dist
+
+jobs:
+
+  build-pdf:
+    runs-on: ubuntu-latest
+    container:
+      image: asciidoctor/docker-asciidoctor:1.88
+      volumes:
+        - ${{ github.workspace }}:/documents
+    steps:
+
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: "Run asciidoctor-pdf"
+        run: |
+          asciidoctor-pdf \
+            -D $DIST_DIR \
+            -o "book.pdf" \
+            $SRC_DIR/index.adoc
+
+      - name: "Save artifact"
+        uses: actions/upload-artifact@v4
+        with:
+          name: book.pdf
+          path: ./dist/book.pdf
+          retention-days: 5
