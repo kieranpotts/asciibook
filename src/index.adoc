@@ -19,7 +19,7 @@
 :icons: font
 :pdf-themesdir: {docdir}/_/themes
 :pdf-fontsdir: {docdir}/_/fonts
-:pdf-theme: basic
+:pdf-theme: light
 :imagesdir: ./_/images
 :xrefstyle: short
 :source-highlighter: pygments

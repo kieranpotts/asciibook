@@ -1,0 +1,6 @@
+extends:
+  - default
+  - ./base-theme.yml
+
+base:
+  font-color: 1D1D1D

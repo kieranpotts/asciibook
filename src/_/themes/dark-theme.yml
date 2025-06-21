@@ -1,12 +1,9 @@
 extends:
   - default
-  - ./basic-theme.yml
+  - ./base-theme.yml
 
 base:
   font-color: #FFFFFF
-  font-family: Open Sans
-  font-size: 10
-  line-height: 1.2
   border-color: #ddddd8
 
 page:
