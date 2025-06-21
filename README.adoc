@@ -16,7 +16,8 @@ This is a template repository for a lightweight toolchain for authoring technica
 * Offer your customers an alternative dark-themed PDF.
 * Automatic table-of-contents generation.
 * Chapters organized in a directory structure.
-* Easy theme customization.
+* Easy theme customization. Lots of bundled fonts to choose from.
+* Includes a basic GitHub Actions workflow to build the book in PDF format.
 
 == Documentation
 
