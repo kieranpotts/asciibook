@@ -9,9 +9,14 @@ This is a template repository for a lightweight toolchain for authoring technica
 == Features
 
 * Use AsciiDoc for authoring books.
-* No local installation required – build tools run in Docker.
+* Supports formatting commonly used in technical books, such as code blocks.
+* Use the official Asciidoctor Docker image to compile books.
+* No local installation required – just Docker.
 * Generate books in PDF, EPUB, and HTML formats.
 * Offer your customers an alternative dark-themed PDF.
+* Automatic table-of-contents generation.
+* Chapters organized in a directory structure.
+* Easy theme customization.
 
 == Documentation
 
@@ -19,7 +24,7 @@ This is a template repository for a lightweight toolchain for authoring technica
 
 The only requirements are *Docker Desktop* and a good AsciiDoc editor – try VS Code with the {link-asciidoctor-vscode-ext}[AsciiDoctor extension].
 
-On Windows, it is RECOMMENDED to configure Docker to use WSL 2, and then run the build commands from WSL in a terminal. Linux emulators like Git Bash are insufficient.
+On Windows, it is RECOMMENDED to configure Docker to use WSL 2, and then run the build commands from a WSL terminal. Linux emulators like Git Bash are not always sufficient.
 
 The script to start the container will run the container under the current user and group. You should add your user to the `docker` group, which will allow you to run Docker commands without needing to use `sudo`.
 
@@ -32,6 +37,37 @@ Also, make sure the `run/*` scripts are executable:
 ----
 $ chmod +x run/*
 ----
+
+=== Editing
+
+The source files for the book – AsciiDoc files, plus images, style sheets, and other assets – are all bundled together in the `src` directory.
+
+The contents of the `src` directory are organized to model the structure of the book.
+
+----
+.
+├── README.md
+└── src
+    └── _/
+    │   ├── fonts/
+    │   ├── images/
+    │   └── themes/
+    │
+    ├── index.adoc
+    ├── preface.adoc
+    ├── foreword.adoc
+    │
+    ├── chapter-01
+    │   └── index.adoc
+    ├── chapter-02
+    │   └── index.adoc
+    └── chapter-03
+        └── index.adoc
+----
+
+The main entry file for the book is `src/index.adoc`. This is the file that the `asciidoctor` program targets when compiling the book. All other `*.adoc` files are included in the book by referencing them from the root `index.adoc` file.
+
+The `src/_` directory is the "includes" directory that contains all the assets – fonts, images, and themes – that are referenced from the `*.adoc` files.
 
 === Building
 
@@ -51,7 +87,7 @@ To compile your book, run the `build` script:
 $ ./run/build
 ----
 
-TIP: If you get a permissions error on the `dist` directory, delete it. The `build` script will recreate the directory with the correct permissions.
+TIP: If you get a permissions error on the `dist` directory, delete it then re-run the `build` script. The `build` script should recreate the directory with the correct permissions.
 
 The script will build the book in PDF, EPUB, and HTML formats, and place the output files in the `dist` directory. Both light-mode and dark-mode versions of the PDF will be generated.
 
@@ -83,7 +119,9 @@ Type `Ctrl`+`D` to exit the container shell.
 
 === CI/CD build
 
-There's a simple https://github.com/kieranpotts/asciibook/actions/workflows/generate-pdf.yaml[GitHub Actions workflow] that builds the book in the PDF format with the default (light) theme, and uploads the resulting PDF file as an artifact (which is retained for 5 days). The workflow is triggered manually. You can use this workflow as a starting point for your own automated build pipeline.
+There's a simple https://github.com/kieranpotts/asciibook/actions/workflows/generate-pdf.yaml[GitHub Actions workflow] that builds the book in the PDF format with the default (light) theme, and uploads the resulting PDF file as an artifact (which is retained for 5 days). The workflow is triggered manually.
+
+You can use this workflow as a starting point for your own automated build pipeline.
 
 == Acknowledgements
 
