@@ -85,8 +85,10 @@ Type `Ctrl`+`D` to exit the container shell.
 
 There's a simple https://github.com/kieranpotts/asciibook/actions/workflows/generate-pdf.yaml[GitHub Actions workflow] that builds the book in the PDF format with the default (light) theme, and uploads the resulting PDF file as an artifact (which is retained for 5 days). The workflow is triggered manually. You can use this workflow as a starting point for your own automated build pipeline.
 
+== Acknowledgements
+
+This project started as a partial fork of https://github.com/lirantal/asciidoc-book-starter/[Liran Tal's AsciiDoc Book Starter]. Other sources of inspiration include https://github.com/akosma/eBook-Template/[Adrian Kosmaczewski's eBook Template].
+
 ''''
 
 Copyright © 2020-present Kieran Potts, link:./LICENSE.txt[MIT license]
-
-Acknowledgement: This project started as a partial fork of https://github.com/lirantal/asciidoc-book-starter/[Liran Tal's AsciiDoc Book Starter].
