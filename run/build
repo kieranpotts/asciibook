@@ -17,31 +17,72 @@ SRC_DIR=./src
 #
 DIST_DIR=./dist
 
-# Generate PDF with default theme.
-# https://github.com/asciidoctor/asciidoctor-pdf
+# Generate PDF for screen with default (light) theme.
+#
+# References for `asciidoctor-pdf`:
+# - https://github.com/asciidoctor/asciidoctor-pdf
+# - https://docs.asciidoctor.org/pdf-converter/latest/
 #
 docker exec -it "$NAME" \
     asciidoctor-pdf \
         -D $DIST_DIR \
-        -o "book.pdf" \
+        -o "book-screen.pdf" \
+        -a doctype=book \
+        -a pdf-theme=screen-light \
+        -a compress \
             $SRC_DIR/index.adoc
 
-# Generate PDF with dark theme.
+# Generate PDF for screen with dark theme.
 #
 docker exec -it "$NAME" \
     asciidoctor-pdf \
         -D $DIST_DIR \
-        -o "book-dark.pdf" \
-        -a pdf-theme=dark \
+        -o "book-screen-dark.pdf" \
+        -a doctype=book \
+        -a pdf-theme=screen-dark \
+        -a compress \
+            $SRC_DIR/index.adoc
+
+# Generate PDF for print (book binding).
+#
+# This configuration toggles the `media` attribute to "prepress" mode. This will
+# render full URLs in the document, rather than hyperlinking the text. It will
+# also implement mirroring of the page margins, such that on the recto side of
+#  a leaf (or the right page) the left margin is wider to allow room for the
+# binding, and on the verso side (the opposite side of the same leaf,  or the
+# left page) it is the right margin that is wider.
+#
+# In addition, the prepress mode will automatically add blank pages to make
+# sure that the title page, table of contents, and chapters all start on a recto
+# (right-hand) page.
+#
+# For more about prepress mode, see the Asciidoctor PDF documentation:
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/print-and-prepress/
+#
+# This configuration also uses a theme that's optimized for physical printing.
+# The print-optimized theme uses a grayscale color palette and a darker black
+# for text.
+#
+docker exec -it "$NAME" \
+    asciidoctor-pdf \
+        -D $DIST_DIR \
+        -o "book-print.pdf" \
+        -a doctype=book \
+        -a media=prepress \
+        -a pdf-theme=print \
             $SRC_DIR/index.adoc
 
 # Generate EPUB format.
-# https://github.com/asciidoctor/asciidoctor-epub3
+#
+# References for `asciidoctor-epub3`:
+# - https://github.com/asciidoctor/asciidoctor-epub3
+# - https://docs.asciidoctor.org/epub3-converter/latest/
 #
 docker exec -it "$NAME" \
     asciidoctor-epub3 \
         -D $DIST_DIR \
         -o "book.epub" \
+        -a doctype=book \
             $SRC_DIR/index.adoc
 
 # Generate HTML format.
@@ -50,14 +91,18 @@ docker exec -it "$NAME" \
 # directly into the HTML. This can result in large file sizes but it
 # simplifies distribution because the HTML document is self-contained
 # and portable as a standalone file. Alternatively, you can remove the
-# `-a data-uri` option, and manually bundle the image assets with the
-# distributed document.
+# `-a data-uri` option and manually bundle the image assets with the
+# distributed document (this will require an additional build step if
+# you want to automate it).
 #
-# https://github.com/asciidoctor/asciidoctor
+# References for `asciidoctor` (aka. "Asciidoctor core"):
+# - https://github.com/asciidoctor/asciidoctor
+# - https://docs.asciidoctor.org/asciidoctor/latest/
 #
 docker exec -it "$NAME" \
     asciidoctor \
         -D $DIST_DIR \
         -o "book.html" \
+        -a doctype=book \
         -a data-uri \
             $SRC_DIR/index.adoc
