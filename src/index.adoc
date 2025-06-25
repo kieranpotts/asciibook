@@ -15,6 +15,7 @@
 :pdf-themesdir: {docdir}/_/themes
 :pdf-fontsdir: {docdir}/_/fonts
 :imagesdir: ./_/images
+:front-cover-image: image:cover/cover.jpeg[width=2100,height=2730]
 :xrefstyle: short
 :source-highlighter: pygments
 :pygments-style: vs
