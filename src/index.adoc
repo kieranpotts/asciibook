@@ -1,25 +1,19 @@
-= Pancakes in Space
-:author: Mike Willson
+:doctitle: AsciiBook
+:description: A template for authoring technical books from AsciiDoc
+:keywords: asciidoc, asciidoctor, template, technical book, ebook, epub, mobi
+:author: Kieran Potts
 :creator: {author}
-:copyright: 2023 Mike Willson
-:email: mike@lirantal.com
+:copyright: 2025 Kieran Potts
 :revnumber: v1.0
-:revdate: 01.01.2022
-:revremark: First draft
-:doctype: book
-:leveloffset: +1
-:front-cover-image: image:cover.jpeg[width=1700,height=2800]
+:revdate: 01.07.2025
 :sectnums:
 :sectlinks:
-:toc: left
 :toclevels: 4
-:toc-title: Table of Contents
-:description: HTML meta tag content for description
-:keywords: HTML meta tag content for keywords
+:toc-title: Contents
+:toc: left
 :icons: font
 :pdf-themesdir: {docdir}/_/themes
 :pdf-fontsdir: {docdir}/_/fonts
-:pdf-theme: light
 :imagesdir: ./_/images
 :xrefstyle: short
 :source-highlighter: pygments

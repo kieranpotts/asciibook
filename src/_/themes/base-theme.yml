@@ -6,11 +6,6 @@
 # - https://github.com/asciidoctor/asciidoctor-pdf/tree/main/data/themes
 # ==============================================================================
 
-# This theme extends the default theme:
-# https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
-#
-extends: default
-
 font:
   catalog:
     merge: true
@@ -66,27 +61,6 @@ font:
       italic: GEM_FONTS_DIR/notosans-italic-subset.ttf
       bold_italic: GEM_FONTS_DIR/notosans-bold_italic-subset.ttf
 
-page:
-  layout: portrait
-  # margin: [0.85in, 0.75in, 1in, 0.75in]
-  margin: [0in, 0in, 0in, 0in]
-  margin-inner: 0in # 1.25in
-  margin-outer: 0in # 0.75in
-
-  # Built-in page sizes:
-  # https://github.com/prawnpdf/pdf-core/blob/0.6.0/lib/pdf/core/page_geometry.rb#L16-L68
-  #
-  # Example:
-  # ------------
-  # size: LETTER
-  # ------------
-  #
-  # Page size is configured to match the "technical" book format offered
-  # by Leanpub, which is 7in x 9.1in.
-  # https://help.leanpub.com/en/articles/2794627
-  #
-  size: 7in x 9.1in
-
 base:
 
   # Swap with any of the above fonts,
@@ -95,6 +69,43 @@ base:
   font-family: Source Serif 4
   font-size: 10
   line-height: 1.2
+
+page:
+  layout: portrait
+
+  # By default, the page margins are set to 1 inch on all sides, except the
+  # top margin which is slightly smaller.
+  #
+  # However, when the `media` attribute is set to "prepress", the margins will
+  # be adjusted to allow extra space for the bound edge of the leafs. One the
+  # recto side (right-hand page) the left margin is wider than the right one,
+  # and on the verso side (left-hand page) the right margin is wider – so
+  # ensuring the text is not too close to the spine of the book.
+  #
+  # This in prepress mode, the effective margins wil be:
+  #
+  # - recto side of a leaf: [0.85in, 0.75in, 1in, 1.25in]
+  # - verso side of a leaf: [0.85in, 1.25in, 1in, 0.75in]
+  #
+  # https://docs.asciidoctor.org/pdf-converter/latest/theme/print-and-prepress/#prepress
+  #
+  margin: [0.85in, 1in, 1in, 1in]
+  margin-inner: 1.25in # Bound edge of the leaf.
+  margin-outer: 0.75in # Outer edge of the leaf.
+
+  # Built-in page sizes:
+  # https://github.com/prawnpdf/pdf-core/blob/0.6.0/lib/pdf/core/page_geometry.rb#L16-L68
+  #
+  # Example:
+  # ------------
+  # size: Letter
+  # ------------
+  #
+  # Page size is configured to match the "technical" book format offered
+  # by Leanpub, which is 7in x 9.1in.
+  # https://help.leanpub.com/en/articles/2794627
+  #
+  size: [7in, 9.1in]
 
 code:
   font:
