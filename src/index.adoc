@@ -22,29 +22,18 @@
 :pygments-linenums-mode: table
 :source-language: javascript
 
-The following is a bunch of text:
+// An optional preamble may be written here. This will be be printed after the table of contents and it will be an untitled section in the book structure.
 
-`pygments-style` options for source code highlighting:
+include::colophon.adoc[leveloffset=+1]
 
-* friendly
-* colorful
-* fruity (dark background)
-* monokai (dark background)
-* stata-dark (dark background)
-* stata-light
-* tango
-* zenburn (dark background)
-* vs
+include::dedication.adoc[leveloffset=+1]
 
-This is the optional preamble (an untitled section body). Useful for
-writing simple sectionless documents consisting only of a preamble.
+include::preface.adoc[leveloffset=+1]
 
-include::preface.adoc[]
+include::foreword.adoc[leveloffset=+1]
 
-include::foreword.adoc[]
+include::chapter-01/index.adoc[leveloffset=+1]
 
-include::chapter-01/index.adoc[]
+include::chapter-02/index.adoc[leveloffset=+1]
 
-include::chapter-02/index.adoc[]
-
-include::chapter-03/index.adoc[]
+include::chapter-03/index.adoc[leveloffset=+1]

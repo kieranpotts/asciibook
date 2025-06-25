@@ -1,0 +1,9 @@
+[colophon%notitle]
+= Colophon
+
+*AsciiBook* +
+by Kieran Potts
+
+© 2025 Kieran Potts
+
+The cover background image is by https://unsplash.com/@anniespratt[Annie Spratt].

@@ -71,6 +71,19 @@ The main entry file for the book is `src/index.adoc`. This is the file that the 
 
 The `src/_` directory is the "includes" directory that contains all the assets – fonts, images, and themes – that are referenced from the `*.adoc` files.
 
+Document attributes are defined at the top of the `src/index.adoc` file. Some of the options that can be modified inlude:
+
+* The `pygments-style` option sets the style for source code highlighting. Options include:
+  ** `friendly`
+  ** `colorful`
+  ** `fruity` (dark background)
+  ** `monokai` (dark background)
+  ** `stata-dark` (dark background)
+  ** `stata-light`
+  ** `tango`
+  ** `zenburn` (dark background)
+  ** `vs`
+
 === Building
 
 The {link-docker-image}[official Asciidoctor Docker container image] is used to compile books from the AsciiDoc source files.
