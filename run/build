@@ -19,6 +19,8 @@ DIST_DIR=./dist
 
 # Generate PDF for screen with default (light) theme.
 #
+# - Enables hyperlinks to section references in the document.
+#
 # References for `asciidoctor-pdf`:
 # - https://github.com/asciidoctor/asciidoctor-pdf
 # - https://docs.asciidoctor.org/pdf-converter/latest/
@@ -29,6 +31,7 @@ docker exec -it "$NAME" \
         -o "book-screen.pdf" \
         -a doctype=book \
         -a pdf-theme=screen-light \
+        -a sectlinks \
         -a compress \
             $SRC_DIR/index.adoc
 
@@ -40,6 +43,7 @@ docker exec -it "$NAME" \
         -o "book-screen-dark.pdf" \
         -a doctype=book \
         -a pdf-theme=screen-dark \
+        -a sectlinks \
         -a compress \
             $SRC_DIR/index.adoc
 

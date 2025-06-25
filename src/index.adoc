@@ -6,21 +6,21 @@
 :copyright: 2025 Kieran Potts
 :revnumber: v1.0
 :revdate: 01.07.2025
-:sectnums:
-:sectlinks:
-:toclevels: 4
-:toc-title: Contents
-:toc: left
-:icons: font
 :pdf-themesdir: {docdir}/_/themes
 :pdf-fontsdir: {docdir}/_/fonts
 :imagesdir: ./_/images
-:front-cover-image: image:cover/cover.jpeg[width=2100,height=2730]
-:xrefstyle: short
+:front-cover-image: image:cover/cover.jpeg[width=2100, height=2730]
+:title-logo-image: image:logo/logo.svg[top=0in, align=right, pdfwidth=1in]
+:toc:
+:toclevels: 2
+:toc-title: Contents
+:sectnums:
+:xrefstyle: full
+:icons: font
+:source-language: javascript
 :source-highlighter: pygments
 :pygments-style: vs
 :pygments-linenums-mode: table
-:source-language: javascript
 
 // An optional preamble may be written here. This will be be printed after the table of contents and it will be an untitled section in the book structure.
 
