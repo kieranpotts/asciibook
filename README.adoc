@@ -6,6 +6,8 @@
 
 This is a template repository for a lightweight toolchain for authoring technical books from AsciiDoc source.
 
+image::./_/cover.jpeg[width=350, height=455]
+
 == Features
 
 * Use AsciiDoc for authoring books.
@@ -18,6 +20,7 @@ This is a template repository for a lightweight toolchain for authoring technica
 * Automatic table-of-contents generation.
 * Chapters organized in a directory structure.
 * Easy theme customization. Lots of bundled fonts to choose from.
+* Cover image template included.
 * Includes a basic GitHub Actions workflow to build the book in PDF format.
 
 == Documentation
