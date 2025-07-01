@@ -13,5 +13,8 @@
     /* Live Preview — Use this for previewing the HTML build. */
     "ms-vscode.live-server",
 
+    /* Lorem Ipsum — Generates placeholder text in the editor. */
+    "tyriar.lorem-ipsum",
+
   ]
 }
