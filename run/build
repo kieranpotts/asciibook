@@ -19,7 +19,8 @@ DIST_DIR=./dist
 
 # Generate PDF for screen with default (light) theme.
 #
-# - Enables hyperlinks to section references in the document.
+# Enables hyperlinks to section references in the document (`sectlinks`).
+# Compresses the PDF output (`compress`).
 #
 # References for `asciidoctor-pdf`:
 # - https://github.com/asciidoctor/asciidoctor-pdf
