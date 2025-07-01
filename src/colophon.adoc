@@ -1,9 +1,14 @@
 [colophon%notitle]
 = Colophon
 
-*AsciiBook* +
-by Kieran Potts
+*{doctitle}* +
+by {author}
 
-© 2025 Kieran Potts
+© {copyright} +
+{license}
+
+[%hardbreaks]
+Version number: {revnumber}
+Version date: {revdate}
 
 The cover background image is by https://unsplash.com/@anniespratt[Annie Spratt].

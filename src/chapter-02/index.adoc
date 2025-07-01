@@ -1,28 +1,18 @@
-= The Rocket
+= Minim non magna
 
+In et et officia est eiusmod est officia dolore laborum. Adipisicing officia nostrud enim et cupidatat id magna velit. Exercitation nostrud esse nulla nostrud proident eu dolore velit Lorem aliqua. Lorem qui ad dolore voluptate sit sunt exercitation elit labore adipisicing. Pariatur amet consequat magna velit ex velit aliquip ipsum labore. Duis dolor id sit aliquip. Cupidatat exercitation consequat velit sint officia sit consequat ex anim.
+
+.Consequat enim sit pariatur ut consequat
+****
+Veniam cupidatat dolore aliqua in. Amet laboris voluptate eiusmod et velit voluptate exercitation cupidatat pariatur consectetur et. Aute anim aliquip ex enim aute sit sunt sit in deserunt. Dolor dolor occaecat minim tempor enim sunt nostrud magna ad ea labore.
 ****
 
-[discrete]
-== Chapter Summary
-To float in Space what you really need is a rocket.
-A rocket is a device that can take you from the ground to space.
+Quis culpa voluptate aliquip pariatur exercitation in ex consectetur aliquip anim dolore fugiat mollit. Quis labore tempor excepteur aute sint cupidatat sit laboris dolor excepteur. Deserunt cillum irure aliquip aliquip in amet consequat irure reprehenderit dolore consequat duis Lorem cillum. Enim duis et velit in. Excepteur est ea quis ea sit id pariatur do commodo. Duis eiusmod culpa excepteur elit labore non ad cupidatat non ex minim. Minim non cupidatat cillum reprehenderit irure officia duis in laborum laborum nostrud.
 
-[discrete]
-== Sections
-
-1. Rockets
-2. Spaceships
-3. Space
-
-****
-
-More text comes here...
-
+.main.js
 [source,javascript,linenums,highlight=2;12-13]
-:snippetFilename: ./index.js
-.{snippetFilename}
 ----
-// Require the framework and instantiate it
+// Require the framework and instantiate it.
 const fastify = require('fastify')({ logger: true })
 
 fastify.get('/', async (request, reply) => { // <.>
@@ -39,48 +29,41 @@ const start = async () => {
 }
 start()
 ----
+<.> Declare a GET route at /
+<.> Run the server!
 
-== Which section is this...
+== Minim non magna officia ut sunt in eu elit et
 
-Here are the other built-in admonition types:
+Veniam aute in ea non consectetur culpa quis est exercitation adipisicing sunt ea. Labore incididunt tempor elit ex dolore eu cillum ut fugiat.
+
+=== Lorem ad sint do sint voluptate duis
 
 ====
-*General section*
-
-This is something you should definitely consider doing every time
-that you write a paragraph. The reason is that it makes it easier
-to read and understand.
+Elit qui aliqua *voluptate excepteur* tempor eiusmod voluptate ex deserunt amet cillum. Exercitation pariatur mollit sint amet cillum est ipsum commodo minim laboris quis sint. Nisi sit sunt sint veniam sit est aliquip cillum officia mollit ullamco. Qui adipisicing adipisicing dolore dolore ut ut ea cupidatat irure ullamco irure.
 ====
 
-NOTE: Some additional info...
+NOTE: Sit enim fugiat consectetur labore veniam est ullamco elit. Nulla eiusmod non sit ex voluptate id do veniam ipsum fugiat occaecat irure esse. Proident deserunt laborum reprehenderit aliqua consectetur aliquip nostrud eiusmod dolore do.
 
-.My header for the tip
+.Sint adipisicing est enim duis cillum tempor
 [TIP]
 ====
-*WARNING*
-
-This is something you should definitely consider doing every time
-that you write a paragraph. The reason is that it makes it easier
-to read and understand.
+Reprehenderit elit laborum ea nostrud et incididunt cillum eu reprehenderit adipisicing officia sunt quis. Aliquip laboris quis quis quis ex sit officia excepteur laborum laborum dolor et ut. Ipsum dolor sint do consectetur enim amet do sit non quis sunt. Mollit fugiat ea ea Lorem do ipsum non velit incididunt dolore in.
 ====
 
-IMPORTANT: Don't forget...
+IMPORTANT: Occaecat cupidatat consequat incididunt aute sit tempor aute. Aliquip irure tempor voluptate veniam reprehenderit cillum est. Sint magna sunt ipsum fugiat non tempor exercitation elit nostrud ex eiusmod.
 
 [WARNING]
 ====
-icon:warning[] *WARNING*
-
-This warning admonition type is styled in a way that uses 0 font size
-so that it is not visible in the PDF output.
+Nostrud adipisicing deserunt aliquip in sit eiusmod nisi irure et irure laborum. Sit cillum non anim reprehenderit duis ex incididunt laborum eiusmod laboris anim ex. Veniam nulla minim mollit adipisicing et. Ex sint sint qui exercitation.
 ====
 
-CAUTION: Ensure that...
+CAUTION: Enim est enim Lorem cillum tempor officia qui qui eiusmod laboris incididunt non Lorem ad. Esse non consequat voluptate Lorem Lorem. Laborum dolore et velit velit Lorem ut cupidatat est tempor. Culpa officia sit eiusmod deserunt anim consequat ea.
 
-Now print a block quote:
+Aliquip laborum pariatur irure elit deserunt cupidatat amet sit amet. Ea minim dolor irure minim ut non velit anim eu dolore fugiat aute Lorem.
 
-[quote, Ben Parker, Spiderman Movie]
+[quote, Magna cupidatat ut, Lorem aliqua Lorem]
 ____
-With great power comes great responsibility.
+Eiusmod dolore qui eu voluptate quis. Deserunt incididunt cillum ad in exercitation sunt ea velit. Ullamco aliquip cupidatat nulla occaecat sint ut in sunt proident cillum quis ex non adipisicing. Mollit elit nisi nostrud do ullamco. Laboris ipsum est ullamco tempor nostrud culpa ipsum sunt laborum. Mollit laboris sit dolor aute officia id ullamco. Ipsum irure excepteur amet incididunt sunt incididunt et ad.
 ____
 
-The text after a prose block quote
+Officia qui in deserunt id est in sint culpa. Exercitation Lorem non est commodo dolor dolore eiusmod amet ipsum quis. Do ad mollit cupidatat aliqua sint Lorem id labore incididunt eu consequat. Elit dolore aliqua esse excepteur quis laborum aute enim anim quis proident. Amet commodo velit sint dolor voluptate sunt sit.

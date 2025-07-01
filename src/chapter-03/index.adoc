@@ -1,38 +1,24 @@
-= How planet systems work?
+= Aute enim eu est elit
 
-The following are planets:
+Reprehenderit deserunt pariatur pariatur veniam consectetur qui do labore fugiat adipisicing ea et officia laboris. Adipisicing voluptate quis aliquip deserunt. Irure nisi sint ea exercitation et exercitation fugiat dolor elit labore ea incididunt do. Officia nisi magna ad culpa officia sunt velit do eu.
 
-. Earth
-.. Earth more
-.. Earth more more
-. Mars
-+
-.An image of outer space
-image::space.jpeg["Outer space"]
-. Jupiter
-. Saturn
+.Consectetur consectetur magna excepteur
+image::./content/earthrise.jpg["Alternative text"]
 
-== Icons in Space
+Laborum occaecat cupidatat consequat non Lorem voluptate. Mollit pariatur veniam dolor eu anim laborum. Dolore commodo ea commodo do tempor fugiat minim. Mollit sunt id pariatur pariatur cillum.
 
-All of the https://fontawesome.com/v4/icons[Font Awesome]footnote:[https://fontawesome.com/v4/icons] icons can be used:
+Laborum cillum ad aute fugiat dolor proident. Mollit duis duis amet reprehenderit eiusmod non adipisicing ad do tempor esse ut reprehenderit laboris. Nostrud nulla sit pariatur elit id.
 
-icon:comment[] This is a comment icon
+* icon:warning[] Warning icon
+* icon:comment[] Comment icon
+* icon:file[] File icon
+* icon:battery-full[] Battery icon
+* icon:github[] GitHub icon
+* icon:code-fork[] Code forking icon
 
-icon:file[] And a file icon
+Aute enim eu est elit id pariatur id labore aliqua. Irure ea laboris esse et. Cillum ipsum enim proident occaecat sit incididunt. Incididunt laborum ex id aute ipsum ullamco amet sint incididunt cillum adipisicing officia.footnote:disclaimer[Opinions are my own!]
 
-icon:battery-full[] And a battery icon
-
-icon:github[] GitHub icon
-
-icon:code-fork[] Code forking icon
-
-Here is an example of a footnote:
-
-A bold statement!footnote:disclaimer[Opinions are my own.]
-
-=== Tables in Space
-
-.This is the optional title of the table
+.Commodo nulla cillum qui enim consequat
 |===
 |Name of Column 1 |Name of Column 2
 
@@ -43,45 +29,12 @@ A bold statement!footnote:disclaimer[Opinions are my own.]
 |Cell in column 2, row 2
 |===
 
-== Source code snippets in Space
+Consectetur consectetur magna excepteur eu labore ea aliqua commodo id enim officia reprehenderit. Nulla eiusmod do nulla culpa. Ullamco deserunt mollit aliqua cupidatat anim dolor aliquip eu voluptate eu ad ullamco aliqua sint. Ea laborum id amet veniam Lorem minim. Culpa ex proident aute velit sint ullamco irure laborum fugiat veniam labore qui.
 
-A source code snippet for the Fastify application:
-
-[source,javascript,linenums,highlight=2;12-13]
-:snippetFilename: ./index.js
-.{snippetFilename}
-----
-// Require the framework and instantiate it
-const fastify = require('fastify')({ logger: true })
-
-fastify.get('/', async (request, reply) => { // <.>
-  return { hello: 'world' }
-})
-
-const start = async () => {
-  try {
-    await fastify.listen({ port: 3000 }) // <.>
-  } catch (err) {
-    fastify.log.error(err)
-    process.exit(1)
-  }
-}
-start()
-----
-<.> Declare a GET route at /
-<.> Run the server!
-
-Also considering styling the book's source code highlight
-using:
-
-----
-:source-highlighter: rouge
-:rouge-style: base16.monokai
-----
-
-And also we can show you how a Sidebar looks like:
-
-.Mint
+.Lorem laborum mollit cupidatat cillum
 [sidebar]
-Mint has visions of global conquest.
-If you don't plant it in a container, it will take over your garden.
+Aute consequat et ullamco occaecat est sint mollit enim in. Sit dolore labore velit minim aliquip ullamco eu reprehenderit velit in sunt et aliqua commodo. Velit occaecat aliqua commodo ea tempor ea. Id sit aute id elit amet Lorem adipisicing id deserunt in est sunt.
+
+Voluptate eu laboris aliquip nostrud. Fugiat laborum do occaecat amet. Pariatur dolor consectetur cupidatat eiusmod reprehenderit ad. Tempor sint non ipsum adipisicing veniam id mollit et non non.
+
+Non irure minim pariatur aliquip velit in sint occaecat quis velit ullamco nostrud adipisicing. Laboris ad adipisicing aute magna Lorem nisi non irure sit culpa reprehenderit. Nulla aliquip Lorem ut laboris occaecat in et. Qui nostrud mollit cillum ex cillum exercitation deserunt est nulla mollit mollit voluptate.
