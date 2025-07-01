@@ -134,11 +134,17 @@ The following attributes control the rendering of the https://docs.asciidoctor.o
 
 == Sections
 
-By default, the first two levels of headings are numbered – see https://docs.asciidoctor.org/asciidoc/latest/sections/numbers/[section numbering] in the AsciiDoc documentation.
+By default, the first two levels of headings are numbered - that is, chapter titles and the first heading level below them. See https://docs.asciidoctor.org/asciidoc/latest/sections/numbers/[section numbering] in the AsciiDoc documentation.
 
 ----
 :sectnums:
 :sectnumlevels: 2
+----
+
+The following attribute removes the default "Chapter: " prefix that would otherwise be applied to chapter-level numbers.
+
+----
+:!chapter-signifier:
 ----
 
 == Source highlighting
@@ -175,6 +181,13 @@ The default is `pygments`, which is a popular syntax highlighter that supports m
 
 The `pygments-linenums-mode` option determines how line numbers are rendered in source code blocks.
 
+You might want to experiment with alternative source code highlighting libraries and their configurations, eg.:
+
+----
+:source-highlighter: rouge
+:rouge-style: base16.monokai
+----
+
 See the AsciiDoc documentation for more details on available options:
 
 * https://docs.asciidoctor.org/asciidoc/latest/verbatim/source-highlighter/[Source highlighting]
@@ -185,6 +198,6 @@ See the AsciiDoc documentation for more details on available options:
 Other typography-related attributes include:
 
 * `xrefstyle`: Controls how cross-references are rendered. The default is `full`, which renders the full reference text.
-* `icons`: Controls how icons are rendered. The default is `font`, which uses font icons.
+* `icons`: Controls how icons are rendered. The default is `font`, which uses font icons. The `icons` option will make available all https://fontawesome.com/v4/icons[Font Awesome] icons – examples are included in the dummy content for the book.
 
 See the https://docs.asciidoctor.org/asciidoc/latest/attributes/document-attributes-ref/#general-content-and-formatting-attributes[AsciiDoc documentation] for more configuration options.
