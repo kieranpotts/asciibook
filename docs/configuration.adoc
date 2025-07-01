@@ -1,0 +1,190 @@
+= Configuration
+
+In AsciiDoc documents, the https://docs.asciidoctor.org/asciidoc/latest/document/header/[document header] sets the document's metadata and configuration options. The header block sets document attributes such as the title, author, language, and cover image, as well as configuration options that control the output format and appearance of compiled artifacts.
+
+AsciiBook includes the following template for the document header. This appears at the top of the `./src/index.adoc` file.
+
+.Template
+[source,asciidoc]
+----
+= AsciiBook: A template for authoring technical books from AsciiDoc
+Kieran Potts
+:subject: A template for authoring technical books from AsciiDoc
+:keywords: asciidoc, asciidoctor, template, technical book, ebook, epub, mobi
+:lang: en
+:creator: {author}
+:copyright: 2025 {author}
+:license: CC-BY-SA 4.0
+:revnumber: v1.0.0
+:revdate: 01.07.2025
+:pdf-themesdir: {docdir}/_/themes
+:pdf-fontsdir: {docdir}/_/fonts
+:imagesdir: ./_/images
+:front-cover-image: image:./cover/cover.jpeg[width=2100, height=2730]
+:title-logo-image: image:./logo/logo.svg[pdfwidth=1in]
+:toc:
+:toclevels: 2
+:toc-title: Contents
+:sectnums:
+:sectnumlevels: 2
+:xrefstyle: full
+:icons: font
+:source-language: javascript
+:source-highlighter: pygments
+:pygments-style: vs
+:pygments-linenums-mode: table
+
+// Book content starts here...
+----
+
+AsciiDoc compilers require that the document header be written as a single contiguous block. The first empty line in the document delimits the document header from the start of the book's content.
+
+After the document title and byline on lines 1 and 2, are written document attributes. AsciiDoc attributes are written in the format `:[attribute-name]: [optional value]`. Attributes are delimited from one another by a single newline character.
+
+Some additional document attributes are injected via Asciidoctor's command-line interface during the build process – see the `./run/build` script for details. It is expected that these attributes will stay consistent across multiple books that use the same template and theme. In the AsciiBook template, the document attributes that are set in the document header (and not via the CLI) are expected to change from book to book. These configurable attributes are documented in more detail below.
+
+== Document title and subtitle
+
+The https://docs.asciidoctor.org/asciidoc/latest/document/title/[document title] is set in the first line of the `./src/index.adoc` file as a level 1 heading.
+
+----
+= AsciiBook: A template for authoring technical books from AsciiDoc
+----
+
+When the document title contains a colon followed by a space (ie, `: `), the text after is treated as a https://docs.asciidoctor.org/asciidoc/latest/document/subtitle/[subtitle].
+
+----
+= [Title]: [Subtitle]
+----
+
+The document title can be dynamically inserted into any other part of the book's AsciiDoc source files by writing `{doctitle}`.
+
+== Author information
+
+https://docs.asciidoctor.org/asciidoc/latest/document/author-information/[Author information] is added via an https://docs.asciidoctor.org/asciidoc/latest/document/author-line/[author line], written immediately after the document title.
+
+----
+= [Document title]
+[Author Name, Second Author, ...]
+----
+
+== Metadata
+
+The following attributes provide metadata about the book. Some of these attributes become properties of generated PDFs. Others are rendered in the book's contents itself.
+
+----
+:subject: A template for authoring technical books from AsciiDoc
+:keywords: asciidoc, asciidoctor, template, technical book, ebook, epub, mobi
+:lang: en
+:creator: {author}
+:copyright: 2025 {author}
+:license: CC-BY-SA 4.0
+:revnumber: v1.0
+:revdate: 01.07.2025
+----
+
+== Base directories
+
+The next block of attributes set the base directories for themes, fonts, and images. These attributes by the `asciidoctor`, `asciidoctor-pdf`, and `asciidoctor-epub3` compilers to locate the external resources referenced from the AsciiDoc source files.
+
+----
+:pdf-themesdir: {docdir}/_/themes
+:pdf-fontsdir: {docdir}/_/fonts
+:imagesdir: ./_/images
+----
+
+== Cover
+
+For PDF and EPUB formats, a cover image is specified via the https://docs.asciidoctor.org/pdf-converter/latest/asciidoc-attributes/#asciidoc-document-attributes[`front-cover-image` attribute]. The value is an https://docs.asciidoctor.org/asciidoc/latest/macros/images/#inline-image-macro[inline image macro] that references an image path relative to the `imagesdir` attribute.
+
+----
+:front-cover-image: image:cover/cover.jpeg[width=2100, height=2730]
+----
+
+A template for https://affinity.serif.com/en-gb/designer/[Affinity Designer] is included in the `./src/_/images/cover` directory.
+
+== Title page
+
+The https://docs.asciidoctor.org/pdf-converter/latest/title-page/[title page], which is the first page of the book after the cover, is automatically generated based on the following document attributes:
+
+* Document title and subtitle
+* Author
+* Revision number and date
+* Title logo image
+
+----
+= AsciiBook: A template for authoring technical books from AsciiDoc
+Kieran Potts
+:revnumber: v1.0
+:revdate: 01.07.2025
+:title-logo-image: image:logo/logo.svg[top=0in, align=right, pdfwidth=1in]
+----
+
+The path to the logo is relative to the value of the `imagesdir` attribute. Commonly, this is the publisher's brand mark.
+
+== Table of contents
+
+The following attributes control the rendering of the https://docs.asciidoctor.org/asciidoc/latest/toc/[table of contents]:
+
+----
+:toc:
+:toclevels: 2
+:toc-title: Contents
+----
+
+== Sections
+
+By default, the first two levels of headings are numbered – see https://docs.asciidoctor.org/asciidoc/latest/sections/numbers/[section numbering] in the AsciiDoc documentation.
+
+----
+:sectnums:
+:sectnumlevels: 2
+----
+
+== Source highlighting
+
+The following attributes control how source code highlighting is applied to code blocks.
+
+----
+:source-language: javascript
+:source-highlighter: pygments
+:pygments-style: vs
+:pygments-linenums-mode: table
+----
+
+The `source-language` attribute sets the default programming language for source code blocks. This can be overridden on a per-block basis by specifying the language in the block's opening line, eg., `[source,python]`.
+
+The `source-highlighter` attribute sets the source code highlighter library that the AsciiDoc  compiler will use to apply apply source code highlighting to source code blocks. The available libraries – included in the AsdiiDoctor Docker image – are:
+
+* `pygments`
+* `coderay`
+* `rouge`
+* `highlight.js`
+
+The default is `pygments`, which is a popular syntax highlighter that supports many programming languages. The `pygments-style` option determines the general style for the source code highlighting. The available options are:
+
+* `friendly`
+* `colorful`
+* `fruity` (dark background)
+* `monokai` (dark background)
+* `stata-dark` (dark background)
+* `stata-light`
+* `tango`
+* `zenburn` (dark background)
+* `vs`
+
+The `pygments-linenums-mode` option determines how line numbers are rendered in source code blocks.
+
+See the AsciiDoc documentation for more details on available options:
+
+* https://docs.asciidoctor.org/asciidoc/latest/verbatim/source-highlighter/[Source highlighting]
+* https://docs.asciidoctor.org/asciidoc/latest/attributes/document-attributes-ref/#source-highlighting-and-formatting-attributes[Source highlighting and formatting attributes]
+
+== Other typography customizations
+
+Other typography-related attributes include:
+
+* `xrefstyle`: Controls how cross-references are rendered. The default is `full`, which renders the full reference text.
+* `icons`: Controls how icons are rendered. The default is `font`, which uses font icons.
+
+See the https://docs.asciidoctor.org/asciidoc/latest/attributes/document-attributes-ref/#general-content-and-formatting-attributes[AsciiDoc documentation] for more configuration options.
