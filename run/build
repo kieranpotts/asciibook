@@ -29,7 +29,7 @@ DIST_DIR=./dist
 docker exec -it "$NAME" \
     asciidoctor-pdf \
         -D $DIST_DIR \
-        -o "book-screen.pdf" \
+        -o "book-screen-light.pdf" \
         -a doctype=book \
         -a pdf-theme=screen-light \
         -a sectlinks \
