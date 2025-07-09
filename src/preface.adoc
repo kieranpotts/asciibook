@@ -10,6 +10,4 @@ Integer sit amet augue risus. Vivamus id aliquam velit. Orci varius natoque pena
 
 Donec sed sem ac augue sodales vulputate pretium eget risus. Cras pharetra, orci at sodales aliquam, augue est pellentesque velit, quis facilisis eros sem vitae enim.
 
-Quisque imperdiet finibus gravida. Curabitur facilisis tincidunt lacus, a faucibus leo ultricies a. Morbi semper cursus rutrum. Morbi varius facilisis lobortis. Maecenas rutrum velit in nisi mollis consequat. Suspendisse eget commodo quam, vel mattis sapien. Cras augue justo, efficitur eget consectetur ut, interdum in erat. Vestibulum faucibus porta nisl sagittis tincidunt. Morbi ac risus efficitur, pellentesque velit nec, condimentum massa.
-
-In enim orci, vehicula et eros sed, suscipit lobortis nibh. Nulla malesuada condimentum neque vel iaculis. Quisque fermentum, mi suscipit semper auctor, orci nulla ornare lorem, sit amet molestie nulla tellus non justo. Aliquam id massa non elit dignissim volutpat. Etiam eget interdum dolor. Proin blandit tincidunt nulla, ut suscipit diam porttitor vel. Donec laoreet elit a metus ultrices fringilla. Pellentesque diam odio, fermentum vel volutpat eu, convallis ut ante.
+Quisque imperdiet finibus gravida. Curabitur facilisis tincidunt lacus, a faucibus leo ultricies a. Morbi semper cursus rutrum. Morbi varius facilisis lobortis. Maecenas rutrum velit in nisi mollis consequat. Suspendisse eget commodo quam, vel mattis sapien.

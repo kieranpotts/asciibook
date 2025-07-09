@@ -1,11 +1,15 @@
 # ==============================================================================
 # Base theme for Asciidoctor PDF documents.
 #
+# Colors are set in the `print` and `screen` themes, which extend this
+# base theme.
+#
 # References:
 # - https://docs.asciidoctor.org/pdf-converter/latest/theme/keys/
 # - https://github.com/asciidoctor/asciidoctor-pdf/tree/main/data/themes
 # ==============================================================================
 
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/font/
 font:
   catalog:
     merge: true
@@ -29,9 +33,9 @@ font:
       bold_italic: EBGaramond/EBGaramond-BoldItalic.ttf
     Source Serif 4:
       normal: SourceSerif4/SourceSerif4-Regular.ttf
-      bold: SourceSerif4/SourceSerif4-Medium.ttf
+      bold: SourceSerif4/SourceSerif4-Bold.ttf
       italic: SourceSerif4/SourceSerif4-RegularItalic.ttf
-      bold_italic: SourceSerif4/SourceSerif4-MediumItalic.ttf
+      bold_italic: SourceSerif4/SourceSerif4-BoldItalic.ttf
     Open Sans:
       normal: OpenSans/OpenSans-Regular.ttf
       bold: OpenSans/OpenSans-Bold.ttf
@@ -61,15 +65,7 @@ font:
       italic: GEM_FONTS_DIR/notosans-italic-subset.ttf
       bold_italic: GEM_FONTS_DIR/notosans-bold_italic-subset.ttf
 
-base:
-
-  # Swap with any of the above fonts,
-  # eg. Bundled Noto Serif, Crimson Pro, EB Garamond, Open Sans, etc.
-  #
-  font-family: Source Serif 4
-  font-size: 10
-  line-height: 1.2
-
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/page/
 page:
   layout: portrait
 
@@ -77,15 +73,15 @@ page:
   # top margin which is slightly smaller.
   #
   # However, when the `media` attribute is set to "prepress", the margins will
-  # be adjusted to allow extra space for the bound edge of the leafs. One the
+  # be adjusted to allow extra space for the bound edge of the leafs. On the
   # recto side (right-hand page) the left margin is wider than the right one,
   # and on the verso side (left-hand page) the right margin is wider – so
   # ensuring the text is not too close to the spine of the book.
   #
-  # This in prepress mode, the effective margins wil be:
+  # Thus, in prepress mode, the effective margins wil be:
   #
-  # - recto side of a leaf: [0.85in, 0.75in, 1in, 1.25in]
-  # - verso side of a leaf: [0.85in, 1.25in, 1in, 0.75in]
+  # - recto: [0.85in, 0.75in, 1in, 1.25in]
+  # - verso: [0.85in, 1.25in, 1in, 0.75in]
   #
   # https://docs.asciidoctor.org/pdf-converter/latest/theme/print-and-prepress/#prepress
   #
@@ -102,123 +98,361 @@ page:
   # ------------
   #
   # Page size is configured to match the "technical" book format offered
-  # by Leanpub, which is 7in x 9.1in.
+  # by Leanpub, which is 7in x 9.1in. This is similar to the printed size of
+  # most O'Reilly books – which tend to be the same width but a couple of
+  # centimeters more in height.
+  #
   # https://help.leanpub.com/en/articles/2794627
   #
   size: [7in, 9.1in]
 
-code:
-  font:
-    family: Source Code Pro
-    size: 9
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/base/
+base:
+  align: justify
 
+  # Swap with any of the above fonts, eg.:
+  # Bundled Noto Serif, Crimson Pro, EB Garamond, Open Sans, etc.
+  #
+  font-family: Source Serif 4
+  font-style: normal
+
+  font-size: 9
+  font-size-large: round($base-font-size * 1.25)
+  font-size-small: round($base-font-size * 0.85)
+  font-size-min: $base-font-size * 0.75
+
+  # https://docs.asciidoctor.org/pdf-converter/latest/theme/base/#height
+  line-height-length: 10
+  line-height: $base-line-height-length / $base-font-size
+
+  border-width: 0.25
+  border-radius: 0
+
+# "Roles" apply styles to specific text elements in the document.
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/role/
+role:
+  lead:
+    font-size: $base-font-size-large
+  big:
+    font-size: $base-font-size-large
+  small:
+    font-size: $base-font-size-small
+  subtitle:
+    font-size: $base-font-size
+    font-style: normal-italic
+
+vertical-rhythm: $base-line-height-length
+horizontal-rhythm: $base-line-height-length
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/link/
+link:
+  text-decoration: underline
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/codespan/
+# Used for monospace text in prose and table cells.
 codespan:
   font:
     family: Source Code Pro
-    size: 8.5
-    color: #232229
-  background-color: #eedffd
-  border-radius: 3
+    style: bold
+    font-size: ~ # Inherit
+  border-radius: 0
   border-offset: 2
+  border-width: $base-border-width
 
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/button/
+button:
+  content: "[\u2009%s\u2009]"
+  font-style: bold
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/keyboard/
+kbd:
+  font-family: $codespan-font-family
+  separator-content: "\u202f+\u202f\u200b"
+  border-width: $codespan-border-width
+  border-radius: $codespan-border-radius
+  border-offset: $codespan-border-offset
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/mark/
+mark:
+  border-offset: $codespan-border-offset
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/menu/
+menu:
+  caret-content: "\u00a0\u203a " # No-break space, single right-pointing angle quotation mark (›)
+  font-style: bold
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/heading/
+heading:
+  line-height: 1
+  min-height-after: 0.5in # Prevents orphaned headings at the bottom of a page.
+
+  text-align: left
+  font-style: bold
+
+  # Part titles (in book doctype):
+  h1:
+    font-size: round($base-font-size * 3.6)
+    margin-top: 0
+    margin-bottom: $vertical-rhythm * 4
+
+  # Chapter titles (in book doctype):
+  h2:
+    font-size: round($base-font-size * 2.4)
+    margin-top: 0
+    margin-bottom: $vertical-rhythm * 2
+
+  # First-level section titles:
+  h3:
+    font-size: round($base-font-size * 1.8)
+    margin-top: $vertical-rhythm * 1
+    margin-bottom: $vertical-rhythm * 1
+
+  # Second-level section titles:
+  h4:
+    font-size: $base-font-size-large
+    margin-top: $vertical-rhythm * 1
+    margin-bottom: $vertical-rhythm * 1
+
+  # Third-level section titles:
+  h5:
+    font-size: $base-font-size
+    margin-top: $vertical-rhythm * 1
+    margin-bottom: $vertical-rhythm * 1
+
+  # Fourth-level section titles - should not be used:
+  h6:
+    font-size: $base-font-size-small
+    margin-top: $vertical-rhythm * 1
+    margin-bottom: $vertical-rhythm * 1
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/title-page/
+title-page:
+  text-align: right
+  logo:
+    # Icon width should be set in the document header, depending on the image used.
+    top: 0% # Flush with page top margin.
+    align: right # Flush with page right margin.
+  title:
+    font-size: $heading-h1-font-size
+    font-style: bold
+    top: 50%
+    margin-top: 0
+    margin-bottom: 0
+  subtitle:
+    font-size: $heading-h4-font-size
+    font-style: bold_italic
+    margin-top: 0
+    margin-bottom: $vertical-rhythm * 2
+  authors:
+    font-size: $base-font-size
+    font-style: normal
+    content: "{author}" # Exclude any email addresses and URLs included in the AsciiDoc byline.
+    margin-top: 0
+    margin-bottom: $vertical-rhythm * 0.5
+  revision:
+    font-size: $base-font-size-small
+    font-style: normal
+    margin-top: 0
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/block/
+block:
+  anchor-top: 0
+  margin-bottom: $vertical-rhythm
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/caption/
+caption:
+  align: left
+  end: top
+  font-size: $base-font-size-large
+  font-style: italic
+  margin-outside: 0
+  margin-inside: $vertical-rhythm / 2
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/abstract/
+# NOT IN USE.
+abstract:
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/admonition/
 admonition:
   font-size: $base-font-size
-  text-align: left
-  column-rule-color: #eeeeee
-  column-rule-width: 0.5
-  background-color: #FFFFFF
-  border-color: #E6E8FA
-  border-radius: 3
-  border-style: dashed
-  font-kerning: none
   font-style: normal
-  padding: 0.3cm
-  label:
-    warning:
-      font-size: 0
-      font-color: #ffffff
-  icon:
-    warning:
-      size: 0
-      padding: 0
-      # icon name specified as:
-      # <icon set>-<icon name>
-      # all prawn icon sets are supported, see: https://github.com/jessedoyle/prawn-icon/tree/master
-      name: fas-fire
-      stroke-color: #000000
-      # or, instead of an icon you can provide an image:
-      # image: bulb.png
-
-admonition_tip:
-  background-color: #ede8fa
-  border-color: #872de6
-  font-size: $base-font-size
-  text-align: left
-  # column-rule-color: #872de6
-  # column-rule-width: 0.5
-  border-radius: 3
-  border-style: dashed
   font-kerning: none
-  padding: 0.3cm
-
-admonition_warning:
-  background-color: #ede8fa
-  border-color: #872de6
-  font-size: $base-font-size
   text-align: left
-  column-rule-color: #872de6
-  column-rule-width: 3
-  border-radius: 3
-  border-style: dashed
-  font-kerning: none
-  padding: 0.3cm
+  text-transform: none
+  border-width: $codespan-border-width
+  border-radius: $codespan-border-radius
+  border-offset: $codespan-border-offset
+  column-rule-width: $base-border-width
+  padding: [$vertical-rhythm / 2, $horizontal-rhythm, $vertical-rhythm / 2, $horizontal-rhythm]
+  label: # TODO: Add demonstration of the label.
+    text-transform: uppercase
+    font-style: bold
 
-list:
-  text-align: left
-
-sidebar:
-  align: left
-
-toc:
-  font_size: 10
-
-vertical-spacing: 26
-
-prose:
-  margin-bottom: 16
-
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/quote/
 quote:
-  border-color: #E6E8FA
-  border-left-width: 5
-  border-width: 0.5
-  padding: [3, 0, 3, 20]
+  font-size: $base-font-size-large
+  border-width: 0
+  border-left-width: $horizontal-rhythm / 3
+  padding: [$vertical-rhythm / 2, $horizontal-rhythm, $vertical-rhythm / 2, $horizontal-rhythm + $quote-border-left-width]
+  cite:
+    font-size: $base-font-size
 
-table:
-  caption-side: bottom
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/verse/
+verse:
+  font-size: $quote-font-size
+  border-width: $quote-border-width
+  border-left-width: $quote-border-left-width
+  padding: $quote-padding
+  cite:
+    font-size: $quote-cite-font-size
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/code/
+# The code block style is used for literal, listing, and source blocks, and literal table cells.
+# Syntax highlighting may be applied to source blocks, overriding the default font color.
+code:
   font:
-    size: 10
+    family: $codespan-font-family
+    size: $base-font-size
+  padding: $vertical-rhythm / 2
+  line-height: 1.25
+  border-radius: $base-border-radius
+  border-width: $base-border-width
 
+# Callout list numbers.
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/callout/#conum
+conum:
+  font:
+    # Setting font family and size seems to break the PDF rendering.
+    font-size: $base-font-size-small
+  line-height: 1
+  # Support numbers 1-20 callouts.
+  # https://symbl.cc/en/unicode/blocks/dingbats/#subblock-2776
+  # https://symbl.cc/en/unicode/blocks/enclosed-alphanumerics/
+  glyphs: \u2776-\u277f,\u24eb-\u24f4
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/callout/
+callout-list:
+  font-size: $base-font-size-small
+  item-spacing: $list-item-spacing / 2
+  margin-top-after-code: 0 # Standard block margin is sufficient.
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/example/
+example:
+  border-color: $base-border-color
+  border-radius: $base-border-radius
+  border-width: $base-border-width
+  background-color: $page-background-color
+  font-color: $base-font-color
+  padding: [$vertical-rhythm, $horizontal-rhythm, $vertical-rhythm, $horizontal-rhythm]
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/block-image/#image
 image:
-  width: 100%
   align: center
   caption:
     end: bottom
+    align: center
     text-align: center
 
-link:
-  font-color: #002FA7
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/prose/
+prose:
+  margin-inner: $vertical-rhythm
+  margin-bottom: $block-margin-bottom
 
-conum:
-  font-color: #000000
-  line-height: 1.2
-  font-size: 12
-  font-kerning: none
-  glyphs: filled
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/sidebar/
+sidebar:
+  border-radius: $base-border-radius
+  border-width: $base-border-width
+  padding: [$vertical-rhythm, $vertical-rhythm * 1.25, $vertical-rhythm, $vertical-rhythm * 1.25]
+  title:
+    text-align: center
+    font-size: $heading-h4-font-size
+    font-style: $heading-font-style
 
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/thematic-break/
+thematic-break:
+  border-style: solid
+  border-width: $base-border-width
+  padding: [$vertical-rhythm * 1.5, 0]
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/list/
+list:
+  # Indentation level is sufficient to allow double-digit list item numbers,
+  # eg. "10.", without them spilling into the page border.
+  indent: $horizontal-rhythm * 2
+  item-spacing: $vertical-rhythm / 2
+ulist:
+  marker:
+    content: "•"
+    # Use the same marker for sub-lists as the parent list.
+    disc:
+      content: "•"
+    square:
+      content: "•"
+    circle:
+      content: "•"
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/description-list/
+description-list:
+  term-font-style: bold
+  term-spacing: $vertical-rhythm / 4
+  description-indent: $horizontal-rhythm * 1.25
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/table/
+table:
+  background-color: $page-background-color
+  border-width: $base-border-width
+  caption:
+    align: left
+    end: top
+  cell-padding: 3
+  grid-width: $base-border-width
+  font-size: $base-font-size
+  head:
+    font-style: bold
+    border-bottom-width: $base-border-width * 3
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/toc/
+toc:
+  font-size: $base-font-size
+  indent: $horizontal-rhythm
+  line-height: 1.4
+  dot-leader:
+    content: ". "
+    font-color: A9A9A9
+    levels: all
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/footnotes/
+footnotes:
+  font-size: $base-font-size-small
+  item-spacing: $list-item-spacing / 2
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/index-section/
+# NOT IN USE.
+index:
+  columns: 2
+  column-gap: $vertical-rhythm
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/add-running-content/
+running-content:
+  start-at: body
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/add-running-content/
+header:
+
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/add-running-content/
 footer:
+  border-style: solid
+  border-width: $base-border-width
+  border-color: $base-border-color
+  font-size: $base-font-size-small
+  height: 0.75in # Must be less than the page margin-bottom.
+  line-height: 1
+  padding: [$vertical-rhythm, 0, 0, 0]
+  vertical-align: top
   recto:
     right:
-      content: '{chapter-title} | *{page-number}*'
+      # No-break spaces around divider.
+      content: "{chapter-title}\u00A0\u00A0\u00A0\u00A0|\u00A0\u00A0\u00A0\u00A0*{page-number}*"
   verso:
     left:
-      content: '*{page-number}* | {chapter-title}'
+      content: "*{page-number}*\u00A0\u00A0\u00A0\u00A0|\u00A0\u00A0\u00A0\u00A0{chapter-title}"

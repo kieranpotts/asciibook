@@ -1,6 +1,116 @@
+# Extends the "default" built-in theme, which in turn is extended by the local "base" theme.
+# https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
+#
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/extends/
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/create-theme/#how-extend-works
+#
 extends:
   - default
   - ./base-theme.yml
 
+page:
+  background-color: ~
+  initial-zoom: FitH # Fit, FitV, FitH
+  mode: outline
+
 base:
-  font-color: 1D1D1D
+  font-color: 111111
+  border-color: CCCCCC
+
+role:
+  subtitle:
+    font-color: $base-font-color
+
+link:
+  font-color: ~
+  text-decoration-color: $base-font-color
+
+codespan:
+  font-color: $base-font-color
+  background-color: EEEEEE
+  border-color: $base-border-color
+
+kbd:
+  background-color: $codespan-background-color
+  border-color: $codespan-border-color
+
+mark:
+  background-color: FFCC00
+
+heading:
+  font-color: $base-font-color
+
+title-page:
+  title:
+    font-color: $base-font-color
+  subtitle:
+    font-color: $base-font-color
+  authors:
+    font-color: $base-font-color
+  revision:
+    font-color: $base-font-color
+
+admonition:
+  background-color: ~
+  border-color: $codespan-border-color
+  column-rule-color: $base-border-color
+  # TODO: Add customizations for admonition icons.
+  icon:
+    caution:
+      #stroke-color: 40CBFF
+    important:
+      #stroke-color: 4096FF
+    note:
+      #stroke-color: E6BF83
+    tip:
+      #stroke-color: EEEEEE
+    warning:
+      #stroke-color: 4096FF
+
+quote:
+  border-color: $base-border-color
+  font-color: $base-font-color
+  cite:
+    font-color: $base-font-color
+
+verse:
+  border-color: $quote-border-color
+  font-color: $quote-font-color
+  cite:
+    font-color: $quote-cite-font-color
+
+code:
+  font-color: $codespan-font-color
+  background-color: $page-background-color
+  border-color: $codespan-border-color
+
+conum:
+  font-color: $base-font-color
+
+callout-list:
+  marker-font-color: $conum-font-color
+
+example:
+  border-color: $base-border-color
+  background-color: $page-background-color
+  font-color: $base-font-color
+
+sidebar:
+  background-color: $codespan-background-color
+  border-color: $codespan-border-color
+  title:
+    font-color: $heading-font-color
+
+thematic-break:
+  border-color: $base-border-color
+
+table:
+  background-color: $page-background-color
+  border-color: $base-border-color
+  body:
+    stripe-background-color: $codespan-background-color
+  foot:
+    background-color: FFFFFF
+
+footer:
+  border-color: $base-border-color

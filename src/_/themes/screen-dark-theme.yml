@@ -1,83 +1,102 @@
+# Extends the "default" built-in theme, which in turn is extended by the local "base" theme.
+# https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
+#
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/extends/
+# https://docs.asciidoctor.org/pdf-converter/latest/theme/create-theme/#how-extend-works
+#
 extends:
   - default
   - ./base-theme.yml
 
-base:
-  font-color: #FFFFFF
-  border-color: #ddddd8
-
 page:
-  background-color: #222222
+  background-color: 111111
+  initial-zoom: FitH # Fit, FitV, FitH
+  mode: outline
 
-header:
-  font-color: #666666
+base:
+  font-color: EEEEEE
+  border-color: 444444
+
+role:
+  subtitle:
+    font-color: $base-font-color
+
+link:
+  font-color: ~
+  text-decoration-color: $base-font-color
+
+codespan:
+  font-color: $base-font-color
+  background-color: 444444
+  border-color: $base-border-color
+
+kbd:
+  background-color: $codespan-background-color
+  border-color: $codespan-border-color
+
+mark:
+  background-color: FFCC00
 
 heading:
   font-color: $base-font-color
 
-link:
-  font-color: #BD7435
-
-codespan:
-  font-color: #4EDEB9
-
-mark:
-  background-color: #0000FF
-
-kbd:
-  background-color: #0A0A0A
-  border-color: #333333
-
 title-page:
   title:
-    font-color: #FFFFFF
+    font-color: $base-font-color
+  subtitle:
+    font-color: $base-font-color
   authors:
-    font-color: #E7E7E7
-
-abstract:
-  font-color: #A39D99
+    font-color: $base-font-color
+  revision:
+    font-color: $base-font-color
 
 admonition:
-  background-color: #0A0A0A
+  background-color: ~
+  border-color: $codespan-border-color
   column-rule-color: $base-border-color
   icon:
     caution:
-      stroke-color: #40CBFF
+      #stroke-color: 40CBFF
+    important:
+      #stroke-color: 4096FF
     note:
-      stroke-color: #E6BF83
+      #stroke-color: E6BF83
     tip:
-      stroke-color: #EEEEEE
+      #stroke-color: EEEEEE
     warning:
-      stroke-color: #4096FF
+      #stroke-color: 4096FF
 
 quote:
   border-color: $base-border-color
-  background-color: #0A0A0A
+  font-color: $base-font-color
   cite:
-    font-color: #666666
+    font-color: $base-font-color
 
 verse:
   border-color: $quote-border-color
+  font-color: $quote-font-color
   cite:
     font-color: $quote-cite-font-color
 
 code:
-  font-color: $base-font-color
-  background-color: #0A0A0A
-  border-color: #333333
+  font-color: $codespan-font-color
+  background-color: $page-background-color
+  border-color: $codespan-border-color
 
 conum:
-  font-color: $codespan-font-color
+  font-color: $base-font-color
+
+callout-list:
+  marker-font-color: $conum-font-color
 
 example:
-  background-color: #0A0A0A
   border-color: $base-border-color
+  background-color: $page-background-color
   font-color: $base-font-color
 
 sidebar:
-  font-color: $base-font-color
-  background-color: #0A0A0A
-  border-color: #1A1A1A
+  background-color: $codespan-background-color
+  border-color: $codespan-border-color
   title:
     font-color: $heading-font-color
 
@@ -86,9 +105,11 @@ thematic-break:
 
 table:
   background-color: $page-background-color
-  border-color: #222222
+  border-color: $base-border-color
+  body:
+    stripe-background-color: $page-background-color
   foot:
-    background-color: $table-background-color
+    background-color: $page-background-color
 
 footer:
-  border-color: #222222
+  border-color: $base-border-color

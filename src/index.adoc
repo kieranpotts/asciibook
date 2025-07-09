@@ -1,13 +1,12 @@
 = AsciiBook: A template for authoring technical books from AsciiDoc
 Kieran Potts
+v1.0, 2025-07-01
 :subject: A template for authoring technical books from AsciiDoc
 :keywords: asciidoc, asciidoctor, template, technical book, ebook, epub, mobi
 :lang: en
 :creator: {author}
 :copyright: 2025 {author}
 :license: CC-BY-SA 4.0
-:revnumber: v1.0.0
-:revdate: 01.07.2025
 :pdf-themesdir: {docdir}/_/themes
 :pdf-fontsdir: {docdir}/_/fonts
 :imagesdir: ./_/images
@@ -25,6 +24,8 @@ Kieran Potts
 :source-highlighter: pygments
 :pygments-style: vs
 :pygments-linenums-mode: table
+:stem:
+:experimental:
 
 include::colophon.adoc[leveloffset=+1]
 
