@@ -28,15 +28,10 @@ v1.0, 2025-07-01
 :experimental:
 
 include::colophon.adoc[leveloffset=+1]
-
 include::dedication.adoc[leveloffset=+1]
-
 include::preface.adoc[leveloffset=+1]
-
 include::foreword.adoc[leveloffset=+1]
 
 include::chapter-01/index.adoc[leveloffset=+1]
-
 include::chapter-02/index.adoc[leveloffset=+1]
-
 include::chapter-03/index.adoc[leveloffset=+1]
