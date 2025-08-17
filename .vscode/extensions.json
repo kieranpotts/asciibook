@@ -16,5 +16,8 @@
     /* Lorem Ipsum — Generates placeholder text in the editor. */
     "tyriar.lorem-ipsum",
 
+    /* VS Code PDF — Render PDFs directly in VS Code. */
+    "tomoki1207.pdf",
+
   ]
 }
