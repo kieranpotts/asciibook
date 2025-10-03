@@ -1,9 +1,10 @@
 = Requirements
 
 :link-asciidoctor-vscode-ext: https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode
+:link-asciidocfx: https://asciidocfx.com/
 :link-docker-desktop: https://www.docker.com/products/docker-desktop/
 
-The only requirements are {link-docker-desktop}[Docker Desktop] and a good AsciiDoc editor – try VS Code with the {link-asciidoctor-vscode-ext}[AsciiDoctor extension].
+The only requirements are {link-docker-desktop}[Docker Desktop] and a good AsciiDoc editor – try VS Code with the {link-asciidoctor-vscode-ext}[AsciiDoctor extension], or {link-asciidocfx}[AsciidocFX].
 
 On Windows, it is RECOMMENDED to configure Docker to use WSL 2, and then run the build commands from a WSL terminal. Linux emulators like Git Bash may not be sufficient.
 
