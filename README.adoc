@@ -23,6 +23,7 @@ image::./_/cover.jpeg[width=350, height=455]
 == Documentation
 
 * link:./docs/requirements.adoc[Requirements]
+* link:./docs/get-started.adoc[Get started]
 * link:./docs/source-files.adoc[Source files]
 * link:./docs/configuration.adoc[Configuration]
 * link:./docs/building.adoc[Building]
