@@ -9,8 +9,8 @@
   workbench color theme to the generated HTML... */
   "asciidoc.preview.useEditorStyle": false,
 
-  /* ...Instead, use the asciidoctors default CSS, which has been
-  copied from the following URL. This means the preview will be fairly
+  /* ...Instead, use the `asciidoctor` default CSS, which has been
+  copied from the below URL. This means the preview will be fairly
   consistent with the generated HTML from the Asciidoctor CLI.
   https://github.com/asciidoctor/asciidoctor/blob/main/src/stylesheets/asciidoctor.css */
   "asciidoc.preview.style": "./.vscode/_/asciidoctor.css",

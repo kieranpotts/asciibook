@@ -6,7 +6,7 @@ image::./_/cover.jpeg[width=350, height=455]
 
 == Features
 
-* AsciiDoc supports formatting commonly used in technical books, such as code blocks.
+* AsciiDoc supports formatting that is commonly used in technical books, such as code blocks.
 * Uses the official https://hub.docker.com/r/asciidoctor/docker-asciidoctor/[Asciidoctor Docker] image for compilation.
 * No local installation required – just Docker.
 * Generate books in PDF, EPUB, and HTML formats.
@@ -22,10 +22,10 @@ image::./_/cover.jpeg[width=350, height=455]
 
 == Documentation
 
-* link:./docs/requirements.adoc[*Requirements*]
-* link:./docs/source-files.adoc[*Source files*]
-* link:./docs/configuration.adoc[*Configuration*]
-* link:./docs/building.adoc[*Building*]
+* link:./docs/requirements.adoc[Requirements]
+* link:./docs/source-files.adoc[Source files]
+* link:./docs/configuration.adoc[Configuration]
+* link:./docs/building.adoc[Building]
 
 == Acknowledgements
 
