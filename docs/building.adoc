@@ -4,16 +4,18 @@ The https://hub.docker.com/r/asciidoctor/docker-asciidoctor[official Asciidoctor
 
 To start the Docker container, run:
 
+[source,sh]
 ----
-$ ./run/start
+./run/start
 ----
 
 The start script keeps the container running indefinitely (until it is explicitly stopped), so you can re-run the build command again and again, and each time it will be executed immediately without restarting the container.
 
 To compile your book, run the `build` script:
 
+[source,sh]
 ----
-$ ./run/build
+./run/build
 ----
 
 TIP: If you get a permissions error on the `dist` directory, delete it then re-run the `build` script. The `build` script should recreate the directory with the correct permissions.
@@ -22,22 +24,23 @@ The script will build the book in PDF, EPUB, and HTML formats, and place the out
 
 When you've finished your work, stop the container:
 
+[source,sh]
 ----
-$ ./run/stop
+./run/stop
 ----
 
 == Advanced usage
 
 If you want to run custom AsciiDoctor commands, you can run the container in interactive mode. The following command maps this repository's root directory to the `/documents` directory inside the container, and takes you to the container's shell environment.
 
-[source,bash]
+[source,sh]
 ----
 docker run -it -v ./:/documents/ asciidoctor/docker-asciidoctor:1.88
 ----
 
 From the container's shell environment, run the following command to use the https://asciidoctor.org/docs/asciidoctor-pdf/[`asciidoctor-pdf`] program to compile the book to PDF format:
 
-[source,bash]
+[source,sh]
 ----
 asciidoctor-pdf -D dist -o "book.pdf" src/index.adoc
 ----
