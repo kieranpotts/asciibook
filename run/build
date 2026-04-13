@@ -7,13 +7,13 @@ rm -rf dist/*
 #
 NAME=asciidoctor
 
-# The directory where the book source is located,
-# relative to the project root.
+# The directory where the book source is located, relative to the
+# directory from where this script is executed.
 #
 SRC_DIR=./src
 
 # The directory where the book's generated output files will be created,
-# relative to the project root.
+# relative to the directory from where this script is executed.
 #
 DIST_DIR=./dist
 
