@@ -1,4 +1,4 @@
-# ==============================================================================
+#
 # Base theme for Asciidoctor PDF documents.
 #
 # Colors are set in the `print` and `screen` themes, which extend this
@@ -7,7 +7,7 @@
 # References:
 # - https://docs.asciidoctor.org/pdf-converter/latest/theme/keys/
 # - https://github.com/asciidoctor/asciidoctor-pdf/tree/main/data/themes
-# ==============================================================================
+#
 
 # https://docs.asciidoctor.org/pdf-converter/latest/theme/font/
 font:
