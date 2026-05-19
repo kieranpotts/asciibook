@@ -1,10 +1,10 @@
-= Source files
+# Source files
 
 The source files for the book – AsciiDoc files, plus images, style sheets, and other assets – are all bundled together in the `src` directory.
 
 The source files are organized to model the structure of the book:
 
-----
+```
 .
 ├── README.md
 └── src
@@ -23,7 +23,7 @@ The source files are organized to model the structure of the book:
     │   └── index.adoc
     └── chapter-03
         └── index.adoc
-----
+```
 
 The main entry point is `src/index.adoc`. This is the file that the `asciidoctor` program targets when compiling the book. Other `*.adoc` files are included in the book by referencing them from the root `index.adoc` file.
 

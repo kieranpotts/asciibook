@@ -1,10 +1,9 @@
-= Get started
+# Get started
 
 This project is a template for a lightweight toolchain for authoring technical books from AsciiDoc source.
 
 You can either clone this repository and customize it for your own book project, or you can import this repository as a Git submodule into your own repository. As a submodule, you can more easily pull in updates to this AsciiBook templates and build scripts.
 
-[source,sh]
-----
+```sh
 git submodule add https://github.com/kieranpotts/asciibook
-----
+```
