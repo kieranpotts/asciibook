@@ -1,3 +1,7 @@
+#
+# Flag old issues. Runs on a schedule overnight.
+#
+
 name: Flag stale issues
 
 on:

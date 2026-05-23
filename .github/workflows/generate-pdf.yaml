@@ -1,3 +1,8 @@
+#
+# Generate a PDF book from the AsciiDoc source,
+# on manual trigger.
+#
+
 name: Generate PDF
 
 on:
