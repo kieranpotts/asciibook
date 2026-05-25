@@ -32,6 +32,6 @@ This is a template repository for a lightweight toolchain for authoring technica
 
 This project started as a partial fork of [Liran Tal's AsciiDoc Book Starter](https://github.com/lirantal/asciidoc-book-starter/). [Adrian Kosmaczewski's eBook Template](https://github.com/akosma/eBook-Template/), and [AsciiDoctor PDF's own examples](https://github.com/asciidoctor/asciidoctor-pdf/tree/main/examples), were other sources of inspiration.
 
----
+-----
 
 Copyright © 2020-present Kieran Potts, [MIT license](./LICENSE.txt)
