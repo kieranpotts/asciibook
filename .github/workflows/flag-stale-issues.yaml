@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check for stale issues
-        uses: kieranpotts/actions/stale-issues@dev
+        uses: kieranpotts/actions/stale-issues@latest/dev
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           threshold-1: '60'
