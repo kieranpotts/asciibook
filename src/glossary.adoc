@@ -1,0 +1,16 @@
+= Glossary
+
+[glossary]
+AsciiDoc:: A lightweight markup language for authoring documentation, books, and other technical content.
+
+Asciidoctor:: A fast, open-source text processor for parsing AsciiDoc and converting it to other formats, such as HTML, PDF, and EPUB.
+
+Attribute:: A named variable, set in the document header or inline, that can be referenced elsewhere in the document or used to configure the behavior of the compiler.
+
+EPUB:: An open ebook file format, widely supported by ereaders and reading apps.
+
+Front matter:: The pages of a book that precede the main chapters, such as the title page, dedication, and preface.
+
+Leveloffset:: An attribute applied to an `include` directive that shifts the heading levels of the included content, allowing standalone documents to be nested at the correct depth.
+
+Theme:: A YAML file that defines the fonts, colors, and layout rules used when compiling a book to PDF.
