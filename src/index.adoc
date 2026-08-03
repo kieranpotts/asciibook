@@ -36,6 +36,9 @@ include::chapter-01/index.adoc[leveloffset=+1]
 include::chapter-02/index.adoc[leveloffset=+1]
 include::chapter-03/index.adoc[leveloffset=+1]
 
+include::appendix-a/index.adoc[leveloffset=+1]
+include::appendix-b/index.adoc[leveloffset=+1]
+
 include::glossary.adoc[leveloffset=+1]
 include::references.adoc[leveloffset=+1]
 

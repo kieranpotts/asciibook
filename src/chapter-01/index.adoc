@@ -583,6 +583,12 @@ The equivalent block macros, indexterm2:[compiler] and indexterm:[Toolchain, com
 
 Only the `asciidoctor-pdf` converter compiles these terms into a visible index – see the *Index* chapter at the end of the PDF edition of this book.
 
+== Appendices
+
+Asciidoctor supports https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/[appendix] sections. The `[appendix]` style is applied to a top-level section, which is then automatically labelled and lettered (Appendix A, Appendix B, and so on), independently of the numbered chapters that precede it.
+
+This template includes two example appendices, `src/appendix-a/index.adoc` and `src/appendix-b/index.adoc`, included immediately after the main chapters.
+
 Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing. Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud et nostrud veniam esse dolor.
 
 Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore incididunt aliquip pariatur cillum culpa anim.
