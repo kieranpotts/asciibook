@@ -8,9 +8,6 @@ Add a Makefile for easier build config. Examples:
 https://github.com/akosma/eBook-Template/blob/master/Makefile
 https://github.com/akosma/eBook-Template/blob/6736a8a2bbcd43c21a2bcf0abbc92563ebee91c5/Makefile
 
-Consider using Docker for the build. Example:
-https://github.com/akosma/eBook-Template/blob/6736a8a2bbcd43c21a2bcf0abbc92563ebee91c5/Dockerfile
-
 ## Output formats
 
 Add support for Kindle (.mobi). Example:
