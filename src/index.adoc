@@ -38,3 +38,8 @@ include::chapter-03/index.adoc[leveloffset=+1]
 
 include::glossary.adoc[leveloffset=+1]
 include::references.adoc[leveloffset=+1]
+
+ifdef::backend-pdf[]
+[index]
+== Index
+endif::[]
