@@ -597,6 +597,12 @@ The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract/[abstract sec
 
 The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract-block/[abstract block style], by contrast, is just a paragraph or open block styled with `[abstract]`, and it works in any doctype. This template uses the block style in `src/abstract.adoc`, an optional front-matter chapter included right after the dedication. Delete the file, and its `include::` line in `src/index.adoc`, if your book doesn't need one.
 
+== Epigraph
+
+Unlike dedication, preface, colophon, and the other front-matter chapters demonstrated in this book, "epigraph" isn't an official Asciidoctor section style – there's no dedicated formatting behavior for it.
+
+An epigraph is conventionally a short, unattributed-to-the-author quotation set apart on its own page near the start of a book. This template approximates that with `src/epigraph.adoc`, which reuses the `[dedication%notitle]` style – centered, unnumbered, titleless – around a standard `[quote]` block (see the "Quotes and citations" section, above, for more on that syntax). Replace the placeholder quote, or delete the file and its `include::` line in `src/index.adoc` if your book doesn't need one.
+
 Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing. Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud et nostrud veniam esse dolor.
 
 Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore incididunt aliquip pariatur cillum culpa anim.

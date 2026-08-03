@@ -1,0 +1,7 @@
+[dedication%notitle]
+= Epigraph
+
+[quote, Author, Source]
+____
+Epigraph text goes here.
+____
