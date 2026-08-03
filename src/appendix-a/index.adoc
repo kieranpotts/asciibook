@@ -1,7 +1,11 @@
 [appendix]
 = Installation guide
 
-This appendix demonstrates the https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/[`[appendix]`] section style. When applied to a top-level section, it's automatically labelled and lettered (Appendix A, Appendix B, and so on) by the `book` doctype, and is excluded from the main chapter numbering.
+This appendix demonstrates the
+https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/[`[appendix]`]
+section style. When applied to a top-level section, it's automatically labelled
+and lettered (Appendix A, Appendix B, and so on) by the `book` doctype, and is
+excluded from the main chapter numbering.
 
 == System requirements
 

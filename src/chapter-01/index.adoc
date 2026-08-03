@@ -1,20 +1,36 @@
 = AsciiDoc reference guide
 
 [.lead]
-This chapter demonstrates every major AsciiDoc element and feature. It serves as a comprehensive reference and testing ground for different formatters and themes. This opening paragraph has been given the "lead" role, which is typically used for introductory text.
+This chapter demonstrates every major AsciiDoc element and feature. It serves as
+a comprehensive reference and testing ground for different formatters and
+themes. This opening paragraph has been given the "lead" role, which is
+typically used for introductory text.
 
-This is the default paragraph style. ... Consectetur esse do anim mollit quis occaecat aute consectetur veniam cillum ut reprehenderit. Ipsum enim ipsum veniam labore nostrud aliquip ea cillum minim commodo sint commodo cillum magna. Dolore tempor id occaecat tempor reprehenderit exercitation reprehenderit do incididunt enim magna cupidatat laboris.
+This is the default paragraph style. ... Consectetur esse do anim mollit quis
+occaecat aute consectetur veniam cillum ut reprehenderit. Ipsum enim ipsum
+veniam labore nostrud aliquip ea cillum minim commodo sint commodo cillum magna.
+Dolore tempor id occaecat tempor reprehenderit exercitation reprehenderit do
+incididunt enim magna cupidatat laboris.
 
 [.text-center]
-This demonstrated how to center a paragraph of text. ... Consectetur aute tempor aliquip dolor. Officia nostrud id laborum laborum exercitation enim labore culpa qui. Velit sint ipsum cupidatat veniam sunt culpa.
+This demonstrated how to center a paragraph of text. ... Consectetur aute tempor
+aliquip dolor. Officia nostrud id laborum laborum exercitation enim labore culpa
+qui. Velit sint ipsum cupidatat veniam sunt culpa.
 
 _There is a thematic break between the next two paragraphs._
 
-Mollit ea minim commodo anim id eiusmod deserunt qui laborum Lorem in fugiat id. Eu et et tempor sit nostrud irure veniam pariatur. Veniam magna quis dolor excepteur deserunt ea tempor laborum Lorem est veniam fugiat cillum elit. Ipsum exercitation ut ea in nostrud nostrud cupidatat tempor. Cupidatat in enim qui Lorem dolor laborum sint sunt sint veniam non.
+Mollit ea minim commodo anim id eiusmod deserunt qui laborum Lorem in fugiat id.
+Eu et et tempor sit nostrud irure veniam pariatur. Veniam magna quis dolor
+excepteur deserunt ea tempor laborum Lorem est veniam fugiat cillum elit. Ipsum
+exercitation ut ea in nostrud nostrud cupidatat tempor. Cupidatat in enim qui
+Lorem dolor laborum sint sunt sint veniam non.
 
 ---
 
-Mollit est velit anim adipisicing. Magna pariatur dolore Lorem aute enim duis et mollit est adipisicing. Laborum dolor voluptate amet veniam. Mollit voluptate quis voluptate Lorem reprehenderit dolor adipisicing veniam mollit laboris reprehenderit qui esse laborum. Qui enim dolore mollit reprehenderit esse.
+Mollit est velit anim adipisicing. Magna pariatur dolore Lorem aute enim duis et
+mollit est adipisicing. Laborum dolor voluptate amet veniam. Mollit voluptate
+quis voluptate Lorem reprehenderit dolor adipisicing veniam mollit laboris
+reprehenderit qui esse laborum. Qui enim dolore mollit reprehenderit esse.
 
 == Document information and attributes
 
@@ -25,7 +41,11 @@ Document Type: {doctype}
 
 == Inline text formatting
 
-This is *bold text*. This is _italic text_. This is `monospace text`. This is #highlighted text#. This is [.underline]#underlined text# and this is [.line-through]#strikethrough text#. This is http://example.com/[hyperlinked text]. This is ^superscript^ text and this is ~subscript~ text.
+This is *bold text*. This is _italic text_. This is `monospace text`. This is
+#highlighted text#. This is [.underline]#underlined text# and this is
+[.line-through]#strikethrough text#. This is
+http://example.com/[hyperlinked text]. This is ^superscript^ text and this is
+~subscript~ text.
 
 === Links and cross-references
 
@@ -60,37 +80,57 @@ Could frame thy fearful symmetry?
 ____
 --
 
-Cupidatat quis ex consequat nulla mollit. Veniam magna enim magna ipsum aliquip fugiat incididunt do nisi officia ipsum. Irure tempor mollit quis quis. Fugiat cupidatat cillum adipisicing exercitation qui esse ad sit nisi do proident enim nostrud.
+Cupidatat quis ex consequat nulla mollit. Veniam magna enim magna ipsum aliquip
+fugiat incididunt do nisi officia ipsum. Irure tempor mollit quis quis. Fugiat
+cupidatat cillum adipisicing exercitation qui esse ad sit nisi do proident enim
+nostrud.
 
 [quote, Winston Churchill]
-The best argument against democracy is a five-minute conversation with the average voter.
+The best argument against democracy is a five-minute conversation with the
+average voter.
 
-Culpa ea mollit aliqua velit dolor proident. Enim deserunt pariatur in esse non id adipisicing elit culpa. Incididunt consectetur amet consequat cillum.
+Culpa ea mollit aliqua velit dolor proident. Enim deserunt pariatur in esse non
+id adipisicing elit culpa. Incididunt consectetur amet consequat cillum.
 
 == Headings and sections
 
-Cillum pariatur est occaecat sunt. Magna irure sunt cillum cillum do. Ea nulla deserunt qui est est qui commodo voluptate ad eu sint sunt Lorem ipsum. Et nisi ipsum proident ea pariatur. Reprehenderit officia anim est proident eu quis.
+Cillum pariatur est occaecat sunt. Magna irure sunt cillum cillum do. Ea nulla
+deserunt qui est est qui commodo voluptate ad eu sint sunt Lorem ipsum. Et nisi
+ipsum proident ea pariatur. Reprehenderit officia anim est proident eu quis.
 
 === Level 3 heading
 
-Commodo quis mollit laborum excepteur nisi ad laborum cillum duis dolor aliquip. Ad adipisicing pariatur aliqua eiusmod ea labore laborum labore culpa dolore. Eu minim nulla nostrud tempor ullamco sunt elit. Ea culpa quis est do laborum officia sunt non enim occaecat exercitation excepteur cupidatat exercitation.
+Commodo quis mollit laborum excepteur nisi ad laborum cillum duis dolor aliquip.
+Ad adipisicing pariatur aliqua eiusmod ea labore laborum labore culpa dolore. Eu
+minim nulla nostrud tempor ullamco sunt elit. Ea culpa quis est do laborum
+officia sunt non enim occaecat exercitation excepteur cupidatat exercitation.
 
 ==== Level 4 heading
 
-Veniam voluptate voluptate do ullamco deserunt reprehenderit consectetur ea sit eiusmod. Ipsum incididunt commodo sunt culpa deserunt quis dolore nulla do incididunt deserunt. Magna quis labore pariatur quis culpa occaecat reprehenderit. Est proident nostrud fugiat voluptate aliqua. Occaecat est est amet id et occaecat sunt nostrud.
+Veniam voluptate voluptate do ullamco deserunt reprehenderit consectetur ea sit
+eiusmod. Ipsum incididunt commodo sunt culpa deserunt quis dolore nulla do
+incididunt deserunt. Magna quis labore pariatur quis culpa occaecat
+reprehenderit. Est proident nostrud fugiat voluptate aliqua. Occaecat est est
+amet id et occaecat sunt nostrud.
 
 ===== Level 5 heading
 
-Consequat nisi cupidatat cillum cillum voluptate eiusmod. Proident dolor in tempor nulla sunt eu anim officia. Eiusmod culpa enim reprehenderit dolor dolore sint aliquip velit dolor exercitation reprehenderit aliquip Lorem. Consequat cupidatat do nostrud adipisicing non est eiusmod commodo deserunt.
+Consequat nisi cupidatat cillum cillum voluptate eiusmod. Proident dolor in
+tempor nulla sunt eu anim officia. Eiusmod culpa enim reprehenderit dolor dolore
+sint aliquip velit dolor exercitation reprehenderit aliquip Lorem. Consequat
+cupidatat do nostrud adipisicing non est eiusmod commodo deserunt.
 
 ====== Level 6 heading
 
-Reprehenderit consectetur duis mollit officia anim nostrud reprehenderit irure officia enim adipisicing. Labore veniam sint exercitation pariatur incididunt. Esse fugiat veniam laborum irure.
+Reprehenderit consectetur duis mollit officia anim nostrud reprehenderit irure
+officia enim adipisicing. Labore veniam sint exercitation pariatur incididunt.
+Esse fugiat veniam laborum irure.
 
 [[custom-anchor]]
 === Section with a custom anchor
 
-This section has a custom anchor that is referenced from elsewhere in this chapter.
+This section has a custom anchor that is referenced from elsewhere in this
+chapter.
 
 [[lists-section]]
 == Lists
@@ -107,21 +147,42 @@ An unordered list with multiple levels:
 An unordered list with long paragraphs of text, and a title:
 
 .List title
-* Amet consectetur enim quis adipisicing tempor veniam ipsum nulla. Elit est enim eu do proident mollit quis elit et Lorem ex culpa irure pariatur. Tempor irure aliqua aute elit elit dolor ad deserunt fugiat eiusmod duis minim deserunt. Aliqua qui laborum deserunt mollit in reprehenderit aute.
-* Enim eu enim est esse et eu ipsum non laborum est. Eiusmod adipisicing aute ullamco officia cupidatat elit sunt.
-* Nisi proident Lorem fugiat non nulla labore esse nisi consequat duis in. Officia eu aliquip ipsum tempor. Dolore excepteur et non aliqua dolor sunt magna. Anim aliqua id nulla exercitation amet id in dolor aliquip id. Pariatur incididunt labore elit ut et.
-* Ea aliquip officia id ad ad esse laboris id enim duis veniam. Amet et anim excepteur anim.
+* Amet consectetur enim quis adipisicing tempor veniam ipsum nulla. Elit est
+  enim eu do proident mollit quis elit et Lorem ex culpa irure pariatur. Tempor
+  irure aliqua aute elit elit dolor ad deserunt fugiat eiusmod duis minim
+  deserunt. Aliqua qui laborum deserunt mollit in reprehenderit aute.
+* Enim eu enim est esse et eu ipsum non laborum est. Eiusmod adipisicing aute
+  ullamco officia cupidatat elit sunt.
+* Nisi proident Lorem fugiat non nulla labore esse nisi consequat duis in.
+  Officia eu aliquip ipsum tempor. Dolore excepteur et non aliqua dolor sunt
+  magna. Anim aliqua id nulla exercitation amet id in dolor aliquip id. Pariatur
+  incididunt labore elit ut et.
+* Ea aliquip officia id ad ad esse laboris id enim duis veniam. Amet et anim
+  excepteur anim.
 
 An unordered list with continuation lines and multiple paragraphs:
 
-* Ut esse tempor deserunt cillum veniam irure quis et commodo.
-  This line is a continuation of the prior one. ... Do occaecat pariatur reprehenderit laboris anim id tempor do irure.
+* Ut esse tempor deserunt cillum veniam irure quis et commodo. This line is a
+  continuation of the prior one. ... Do occaecat pariatur reprehenderit laboris
+  anim id tempor do irure.
 
-* This list item is composed of multiple paragraphs. ... Excepteur voluptate adipisicing pariatur voluptate ipsum est dolor ex mollit anim. Nostrud incididunt pariatur consectetur velit mollit amet et. Ut excepteur laborum tempor nostrud.
+* This list item is composed of multiple paragraphs. ... Excepteur voluptate
+  adipisicing pariatur voluptate ipsum est dolor ex mollit anim. Nostrud
+  incididunt pariatur consectetur velit mollit amet et. Ut excepteur laborum
+  tempor nostrud.
 +
-Minim enim exercitation nisi est consequat reprehenderit. Sit pariatur labore minim reprehenderit cillum amet commodo dolore consequat et eiusmod id. Culpa cupidatat laborum enim dolore. Ea id dolor commodo deserunt culpa laboris laborum esse reprehenderit id aute. Dolor mollit eu Lorem voluptate cillum pariatur quis laborum sit commodo adipisicing excepteur dolor mollit. Excepteur veniam consequat incididunt ad dolor cupidatat exercitation id aliquip proident pariatur ad.
+Minim enim exercitation nisi est consequat reprehenderit. Sit pariatur labore
+minim reprehenderit cillum amet commodo dolore consequat et eiusmod id. Culpa
+cupidatat laborum enim dolore. Ea id dolor commodo deserunt culpa laboris
+laborum esse reprehenderit id aute. Dolor mollit eu Lorem voluptate cillum
+pariatur quis laborum sit commodo adipisicing excepteur dolor mollit. Excepteur
+veniam consequat incididunt ad dolor cupidatat exercitation id aliquip proident
+pariatur ad.
 +
-Non magna ut cillum occaecat ea quis mollit id labore excepteur. Fugiat minim deserunt culpa irure culpa dolor deserunt sunt aliqua aliquip. Consectetur commodo dolor consequat dolor adipisicing anim tempor veniam aute amet voluptate sit consequat.
+Non magna ut cillum occaecat ea quis mollit id labore excepteur. Fugiat minim
+deserunt culpa irure culpa dolor deserunt sunt aliqua aliquip. Consectetur
+commodo dolor consequat dolor adipisicing anim tempor veniam aute amet voluptate
+sit consequat.
 
 An ordered list:
 
@@ -143,11 +204,19 @@ An ordered list:
 
 Alternative syntax:
 
-1. Est tempor fugiat excepteur elit fugiat incididunt aliqua veniam magna irure ad exercitation.Elit aute culpa ad id veniam pariatur ex qui fugiat sint. Mollit dolore ea quis nostrud id excepteur ea fugiat irure.
-2. Aliqua dolor consequat aliqua occaecat consectetur velit officia occaecat veniam sint. Ipsum sint sit ipsum amet tempor.
-3. Eiusmod ipsum culpa sit nostrud veniam consectetur magna consectetur nisi eu nostrud est commodo. Consectetur cillum in consequat non cillum consequat officia cupidatat. Do ipsum velit qui anim sit sit nulla magna. Laborum deserunt aute pariatur exercitation veniam.
-4. Ea do aliqua ad eiusmod amet occaecat dolor sit ex reprehenderit nulla exercitation esse.
-5. Nisi reprehenderit adipisicing laboris duis tempor pariatur amet commodo irure do non est exercitation.
+1. Est tempor fugiat excepteur elit fugiat incididunt aliqua veniam magna irure
+   ad exercitation.Elit aute culpa ad id veniam pariatur ex qui fugiat sint.
+   Mollit dolore ea quis nostrud id excepteur ea fugiat irure.
+2. Aliqua dolor consequat aliqua occaecat consectetur velit officia occaecat
+   veniam sint. Ipsum sint sit ipsum amet tempor.
+3. Eiusmod ipsum culpa sit nostrud veniam consectetur magna consectetur nisi eu
+   nostrud est commodo. Consectetur cillum in consequat non cillum consequat
+   officia cupidatat. Do ipsum velit qui anim sit sit nulla magna. Laborum
+   deserunt aute pariatur exercitation veniam.
+4. Ea do aliqua ad eiusmod amet occaecat dolor sit ex reprehenderit nulla
+   exercitation esse.
+5. Nisi reprehenderit adipisicing laboris duis tempor pariatur amet commodo
+   irure do non est exercitation.
 
 .A mixed list
 . Ordered item
@@ -173,11 +242,12 @@ SSD:: Solid State Drive
 === Question and answer lists
 
 [qanda]
-What is AsciiDoc?::
-AsciiDoc is a lightweight markup language for authoring notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs.
+What is AsciiDoc?:: AsciiDoc is a lightweight markup language for authoring
+                    notes, documentation, articles, books, ebooks, slideshows,
+                    web pages, man pages and blogs.
 
-Why use AsciiDoc?::
-AsciiDoc is highly configurable and extensible, with excellent toolchain support and multiple output formats.
+Why use AsciiDoc?:: AsciiDoc is highly configurable and extensible, with
+                    excellent toolchain support and multiple output formats.
 
 == Tables
 
@@ -302,7 +372,10 @@ fib_sequence = fibonacci(10)
 print(f"First 10 Fibonacci numbers: {fib_sequence}")
 ----
 
-The following `[source]` block does not specify a language, so the syntax highlighter will fallback to the default language set via the `:source-language:` attribute in the document header – which is JavaScript in this case.
+The following `[source]` block does not specify a language, so the syntax
+highlighter will fallback to the default language set via the
+`:source-language:` attribute in the document header – which is JavaScript in
+this case.
 
 [source]
 ----
@@ -325,7 +398,8 @@ function generateId() {
 <3> Generate unique identifier
 <4> Create random alphanumeric ID
 
-The following `[source]` block demonstrates line number highlighting, and callouts with automatic numbering.
+The following `[source]` block demonstrates line number highlighting, and
+callouts with automatic numbering.
 
 .main.js
 [source,javascript,linenums,highlight=2;12-13]
@@ -378,21 +452,26 @@ Literal text written using the indendation style:
 
 == Admonitions
 
-NOTE: This is a note admonition. It provides additional information that might be helpful.
+NOTE: This is a note admonition. It provides additional information that might
+be helpful.
 
 TIP: This is a tip admonition. It offers helpful suggestions or best practices.
 
-IMPORTANT: This is an important admonition. It highlights crucial information that shouldn't be missed.
+IMPORTANT: This is an important admonition. It highlights crucial information
+that shouldn't be missed.
 
 .Optional title
 [CAUTION]
 ====
-This is a caution admonition with a title. It advises careful consideration or action.
+This is a caution admonition with a title. It advises careful consideration or
+action.
 ====
 
 [WARNING]
 ====
-This is a complex warning admonition with multiple paragraphs and formatted text. Warning admonitions are used to alert readers to potential issues or risks.
+This is a complex warning admonition with multiple paragraphs and formatted
+text. Warning admonitions are used to alert readers to potential issues or
+risks.
 
 It can contain:
 
@@ -406,7 +485,8 @@ It can contain:
 
 .Sidebar title
 ****
-This is a sidebar block. Sidebars are used to present information that supplements the main content but can be read independently.
+This is a sidebar block. Sidebars are used to present information that
+supplements the main content but can be read independently.
 
 Sidebars can contain:
 
@@ -417,15 +497,24 @@ Sidebars can contain:
 
 .Single-paragraph sidebar
 [sidebar]
-Aute consequat et ullamco occaecat est sint mollit enim in. Sit dolore labore velit minim aliquip ullamco eu reprehenderit velit in sunt et aliqua commodo. Velit occaecat aliqua commodo ea tempor ea. Id sit aute id elit amet Lorem adipisicing id deserunt in est sunt.
+Aute consequat et ullamco occaecat est sint mollit enim in. Sit dolore labore
+velit minim aliquip ullamco eu reprehenderit velit in sunt et aliqua commodo.
+Velit occaecat aliqua commodo ea tempor ea. Id sit aute id elit amet Lorem
+adipisicing id deserunt in est sunt.
 
-This is a standard paragraph. ... Minim veniam et nisi aliquip ut exercitation ipsum minim excepteur dolore nisi sint proident. Aliqua nulla velit ut pariatur esse pariatur. Officia elit aliquip magna labore reprehenderit laborum ad exercitation sint aliqua laboris minim eiusmod et.
+This is a standard paragraph. ... Minim veniam et nisi aliquip ut exercitation
+ipsum minim excepteur dolore nisi sint proident. Aliqua nulla velit ut pariatur
+esse pariatur. Officia elit aliquip magna labore reprehenderit laborum ad
+exercitation sint aliqua laboris minim eiusmod et.
 
 === Example blocks
 
 .Title
 ====
-This is an https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[example block]. It's used to showcase examples of concepts discussed in the main content. It may contain *complex formatting*.
+This is an
+https://docs.asciidoctor.org/asciidoc/latest/blocks/example-blocks/[example block].
+It's used to showcase examples of concepts discussed in the main content. It may
+contain *complex formatting*.
 
 [source]
 ----
@@ -440,12 +529,15 @@ Hello, World!
 --
 This is an open block, masquerading as a sidebar.
 
-Open blocks are generic containers that can hold any type of content and can be styled using roles. Open blocks are useful for grouping content that should be processed together.
+Open blocks are generic containers that can hold any type of content and can be
+styled using roles. Open blocks are useful for grouping content that should be
+processed together.
 --
 
 == Mathematical expressions
 
-When https://docs.asciidoctor.org/asciidoc/latest/stem/[stem] processing is enabled, you can include mathematical expressions:
+When https://docs.asciidoctor.org/asciidoc/latest/stem/[stem] processing is
+enabled, you can include mathematical expressions:
 
 === Inline math
 
@@ -485,7 +577,8 @@ image::./content/earthrise.jpg["Alternative text"]
 
 === Inline images
 
-This paragraph contains an inline image image:./icons/picture.png[Picture, 16, 16] within the text.
+This paragraph contains an inline image
+image:./icons/picture.png[Picture, 16, 16] within the text.
 
 === Font icons
 
@@ -529,7 +622,8 @@ Select menu:Edit[Find > Replace] to open the find and replace dialog.
 
 == Page breaks and spacing
 
-Immediately below this paragraph is a forced page break, `<<<`. In PDF output, the next content block will start on the next page.
+Immediately below this paragraph is a forced page break, `<<<`. In PDF output,
+the next content block will start on the next page.
 
 <<<
 
@@ -537,7 +631,8 @@ This content appears after a page break (in PDF output).
 
 == Comments
 
-Below this paragraph are some comments. These should not appear in the final output.
+Below this paragraph are some comments. These should not appear in the final
+output.
 
 // This is a single-line comment
 
@@ -551,80 +646,176 @@ that spans several lines
 
 This sentence has a footnote.footnote:[This is the footnote text.]
 
-This sentence has a footnote with an ID.footnote:fn1[This footnote can be referenced again.]
+This sentence has a footnote with an
+ID.footnote:fn1[This footnote can be referenced again.]
 
 This sentence references the previous footnote again.footnote:fn1[]
 
-The footnotes are printed at the end of the chapter (ie. they are implemented as endnotes).
+The footnotes are printed at the end of the chapter (ie. they are implemented as
+endnotes).
 
 == Bibliography and citations
 
-Asciidoctor supports semantic https://docs.asciidoctor.org/asciidoc/latest/sections/bibliography/[bibliography] sections. The `[bibliography]` style is applied to a section containing a list of entries, and each entry starts with a `[[[id]]]` anchor that can be cited from anywhere in the book using the standard cross-reference syntax.
+Asciidoctor supports semantic
+https://docs.asciidoctor.org/asciidoc/latest/sections/bibliography/[bibliography]
+sections. The `[bibliography]` style is applied to a section containing a list
+of entries, and each entry starts with a `[[[id]]]` anchor that can be cited
+from anywhere in the book using the standard cross-reference syntax.
 
-This template's bibliography lives in `src/references.adoc`, which is included as the final chapter of the book.
+This template's bibliography lives in `src/references.adoc`, which is included
+as the final chapter of the book.
 
-According to <<ref1>>, advanced documentation techniques are essential for technical writing. The <<asciidoc>> documentation provides comprehensive coverage of the language's features.
+According to <<ref1>>, advanced documentation techniques are essential for
+technical writing. The <<asciidoc>> documentation provides comprehensive
+coverage of the language's features.
 
 == Glossary
 
-Asciidoctor also supports semantic https://docs.asciidoctor.org/asciidoc/latest/sections/glossary/[glossary] sections. The `[glossary]` style is applied to a description list, and each term is rendered with its definition indented beneath it.
+Asciidoctor also supports semantic
+https://docs.asciidoctor.org/asciidoc/latest/sections/glossary/[glossary]
+sections. The `[glossary]` style is applied to a description list, and each term
+is rendered with its definition indented beneath it.
 
-This template's glossary lives in `src/glossary.adoc`, which is included near the end of the book, before the bibliography.
+This template's glossary lives in `src/glossary.adoc`, which is included near
+the end of the book, before the bibliography.
 
 == Index terms
 
-Asciidoctor supports https://docs.asciidoctor.org/asciidoc/latest/sections/user-index/[index terms], which mark words and phrases for inclusion in a back-of-book index. A visible term flows into the text at the point it's declared; a concealed term is indexed without adding any visible text.
+Asciidoctor supports
+https://docs.asciidoctor.org/asciidoc/latest/sections/user-index/[index terms],
+which mark words and phrases for inclusion in a back-of-book index. A visible
+term flows into the text at the point it's declared; a concealed term is indexed
+without adding any visible text.
 
-((Asciidoctor)) is the toolchain that compiles AsciiDoc source into PDF, EPUB, and HTML.
+((Asciidoctor)) is the toolchain that compiles AsciiDoc source into PDF, EPUB,
+and HTML.
 
-This template uses AsciiDoc as its markup language.(((Markup languages, AsciiDoc)))
+This template uses AsciiDoc as its markup language.(((Markup languages,
+AsciiDoc)))
 
-The equivalent block macros, indexterm2:[compiler] and indexterm:[Toolchain, compiler], can be used in place of the parenthetical syntax.
+The equivalent block macros, indexterm2:[compiler] and indexterm:[Toolchain,
+compiler], can be used in place of the parenthetical syntax.
 
-Only the `asciidoctor-pdf` converter compiles these terms into a visible index – see the *Index* chapter at the end of the PDF edition of this book.
+Only the `asciidoctor-pdf` converter compiles these terms into a visible index –
+see the *Index* chapter at the end of the PDF edition of this book.
 
 == Appendices
 
-Asciidoctor supports https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/[appendix] sections. The `[appendix]` style is applied to a top-level section, which is then automatically labelled and lettered (Appendix A, Appendix B, and so on), independently of the numbered chapters that precede it.
+Asciidoctor supports
+https://docs.asciidoctor.org/asciidoc/latest/sections/appendix/[appendix]
+sections. The `[appendix]` style is applied to a top-level section, which is
+then automatically labelled and lettered (Appendix A, Appendix B, and so on),
+independently of the numbered chapters that precede it.
 
-This template includes two example appendices, `src/appendix-a/index.adoc` and `src/appendix-b/index.adoc`, included immediately after the main chapters.
+This template includes two example appendices, `src/appendix-a/index.adoc` and
+`src/appendix-b/index.adoc`, included immediately after the main chapters.
 
 == Abstract
 
-Asciidoctor has two different features named "abstract", and only one of them works with the `book` doctype that this template uses.
+Asciidoctor has two different features named "abstract", and only one of them
+works with the `book` doctype that this template uses.
 
-The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract/[abstract section style] – applying `[abstract]` directly to a heading – only works on the first section of an `article` document. It's rejected by the `book` doctype.
+The
+https://docs.asciidoctor.org/asciidoc/latest/sections/abstract/[abstract section style]
+– applying `[abstract]` directly to a heading – only works on the first section
+of an `article` document. It's rejected by the `book` doctype.
 
-The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract-block/[abstract block style], by contrast, is just a paragraph or open block styled with `[abstract]`, and it works in any doctype. This template uses the block style in `src/abstract.adoc`, an optional front-matter chapter included right after the dedication. Delete the file, and its `include::` line in `src/index.adoc`, if your book doesn't need one.
+The
+https://docs.asciidoctor.org/asciidoc/latest/sections/abstract-block/[abstract block style],
+by contrast, is just a paragraph or open block styled with `[abstract]`, and it
+works in any doctype. This template uses the block style in `src/abstract.adoc`,
+an optional front-matter chapter included right after the dedication. Delete the
+file, and its `include::` line in `src/index.adoc`, if your book doesn't need
+one.
 
 == Epigraph
 
-Unlike dedication, preface, colophon, and the other front-matter chapters demonstrated in this book, "epigraph" isn't an official Asciidoctor section style – there's no dedicated formatting behavior for it.
+Unlike dedication, preface, colophon, and the other front-matter chapters
+demonstrated in this book, "epigraph" isn't an official Asciidoctor section
+style – there's no dedicated formatting behavior for it.
 
-An epigraph is conventionally a short, unattributed-to-the-author quotation set apart on its own page near the start of a book. This template approximates that with `src/epigraph.adoc`, which reuses the `[dedication%notitle]` style – centered, unnumbered, titleless – around a standard `[quote]` block (see the "Quotes and citations" section, above, for more on that syntax). Replace the placeholder quote, or delete the file and its `include::` line in `src/index.adoc` if your book doesn't need one.
+An epigraph is conventionally a short, unattributed-to-the-author quotation set
+apart on its own page near the start of a book. This template approximates that
+with `src/epigraph.adoc`, which reuses the `[dedication%notitle]` style –
+centered, unnumbered, titleless – around a standard `[quote]` block (see the
+"Quotes and citations" section, above, for more on that syntax). Replace the
+placeholder quote, or delete the file and its `include::` line in
+`src/index.adoc` if your book doesn't need one.
 
-Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing. Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud et nostrud veniam esse dolor.
+Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing.
+Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud
+et nostrud veniam esse dolor.
 
-Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore incididunt aliquip pariatur cillum culpa anim.
+Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua
+ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur
+consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt
+ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit
+irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore
+incididunt aliquip pariatur cillum culpa anim.
 
-Et reprehenderit elit officia qui anim veniam et nostrud eu fugiat dolor laboris labore. Incididunt exercitation cupidatat non nostrud magna incididunt esse mollit voluptate. Id incididunt nostrud ullamco ipsum culpa ullamco. Aute nulla eu velit exercitation ullamco duis consectetur dolore occaecat esse sint. Officia aliqua ea est est mollit officia eiusmod aliquip in aliquip voluptate culpa commodo. Voluptate nostrud laborum proident dolore sunt et reprehenderit. Deserunt excepteur irure elit exercitation laborum Lorem anim in id.
+Et reprehenderit elit officia qui anim veniam et nostrud eu fugiat dolor laboris
+labore. Incididunt exercitation cupidatat non nostrud magna incididunt esse
+mollit voluptate. Id incididunt nostrud ullamco ipsum culpa ullamco. Aute nulla
+eu velit exercitation ullamco duis consectetur dolore occaecat esse sint.
+Officia aliqua ea est est mollit officia eiusmod aliquip in aliquip voluptate
+culpa commodo. Voluptate nostrud laborum proident dolore sunt et reprehenderit.
+Deserunt excepteur irure elit exercitation laborum Lorem anim in id.
 
-Ut non ex nisi eu non dolore consectetur non dolore. Et sint incididunt aute id mollit elit non. Sunt ad ea id cupidatat ad occaecat anim ipsum non ipsum quis in sunt. Anim non magna officia ad culpa qui consectetur et ut in cillum velit officia.
+Ut non ex nisi eu non dolore consectetur non dolore. Et sint incididunt aute id
+mollit elit non. Sunt ad ea id cupidatat ad occaecat anim ipsum non ipsum quis
+in sunt. Anim non magna officia ad culpa qui consectetur et ut in cillum velit
+officia.
 
-Enim aliqua qui qui amet et. Tempor ullamco occaecat irure irure ad est. Et exercitation proident sint sit adipisicing sit ut ipsum est cupidatat ad.
+Enim aliqua qui qui amet et. Tempor ullamco occaecat irure irure ad est. Et
+exercitation proident sint sit adipisicing sit ut ipsum est cupidatat ad.
 
-Exercitation excepteur exercitation quis tempor sint labore quis proident labore minim. Exercitation excepteur tempor ex ipsum do ullamco. Nisi nulla sunt dolore do velit duis ad culpa et excepteur ullamco. Voluptate aliquip aliqua culpa eu ad cupidatat id anim aute incididunt aliquip consectetur culpa do. Magna mollit veniam id non labore pariatur aliquip ipsum reprehenderit officia reprehenderit. Reprehenderit reprehenderit enim cupidatat eiusmod enim consequat ipsum ipsum aliquip ea proident. Officia aliqua veniam in voluptate enim proident aute est culpa ex aute consectetur.
+Exercitation excepteur exercitation quis tempor sint labore quis proident labore
+minim. Exercitation excepteur tempor ex ipsum do ullamco. Nisi nulla sunt dolore
+do velit duis ad culpa et excepteur ullamco. Voluptate aliquip aliqua culpa eu
+ad cupidatat id anim aute incididunt aliquip consectetur culpa do. Magna mollit
+veniam id non labore pariatur aliquip ipsum reprehenderit officia reprehenderit.
+Reprehenderit reprehenderit enim cupidatat eiusmod enim consequat ipsum ipsum
+aliquip ea proident. Officia aliqua veniam in voluptate enim proident aute est
+culpa ex aute consectetur.
 
-Consectetur exercitation exercitation est veniam eiusmod culpa fugiat ea excepteur eu veniam proident ut officia. Ut culpa amet nulla eu labore ullamco. Consectetur officia exercitation sit laborum ad nostrud magna nulla enim aliqua Lorem incididunt mollit.
+Consectetur exercitation exercitation est veniam eiusmod culpa fugiat ea
+excepteur eu veniam proident ut officia. Ut culpa amet nulla eu labore ullamco.
+Consectetur officia exercitation sit laborum ad nostrud magna nulla enim aliqua
+Lorem incididunt mollit.
 
-Culpa duis Lorem excepteur mollit nostrud culpa mollit magna nostrud sit sint ullamco excepteur. Labore excepteur aliquip consectetur amet esse adipisicing et pariatur mollit esse occaecat commodo. Minim ea sit laboris cupidatat sit proident exercitation duis. Reprehenderit mollit quis pariatur sunt aliqua pariatur sit culpa occaecat consectetur reprehenderit sint laborum anim. Reprehenderit nisi aliqua laborum nostrud. Velit aliqua magna incididunt consequat ullamco consequat qui dolore commodo minim et veniam minim consectetur. Id consequat dolor culpa labore aliqua occaecat velit est do ut.
+Culpa duis Lorem excepteur mollit nostrud culpa mollit magna nostrud sit sint
+ullamco excepteur. Labore excepteur aliquip consectetur amet esse adipisicing et
+pariatur mollit esse occaecat commodo. Minim ea sit laboris cupidatat sit
+proident exercitation duis. Reprehenderit mollit quis pariatur sunt aliqua
+pariatur sit culpa occaecat consectetur reprehenderit sint laborum anim.
+Reprehenderit nisi aliqua laborum nostrud. Velit aliqua magna incididunt
+consequat ullamco consequat qui dolore commodo minim et veniam minim
+consectetur. Id consequat dolor culpa labore aliqua occaecat velit est do ut.
 
-Reprehenderit cillum nisi occaecat mollit velit pariatur eu nisi proident incididunt ullamco minim cupidatat culpa. Reprehenderit veniam dolor cillum voluptate laboris exercitation non mollit amet ut quis. Sint aute tempor enim incididunt sit veniam est ipsum sint commodo non occaecat elit. Ut voluptate quis aute laboris. Veniam aute in quis esse occaecat ea labore anim do voluptate magna proident.
+Reprehenderit cillum nisi occaecat mollit velit pariatur eu nisi proident
+incididunt ullamco minim cupidatat culpa. Reprehenderit veniam dolor cillum
+voluptate laboris exercitation non mollit amet ut quis. Sint aute tempor enim
+incididunt sit veniam est ipsum sint commodo non occaecat elit. Ut voluptate
+quis aute laboris. Veniam aute in quis esse occaecat ea labore anim do voluptate
+magna proident.
 
-Consequat cillum aliqua enim quis laboris et. Culpa labore officia irure eiusmod ullamco nostrud cillum laborum qui Lorem labore ipsum eiusmod eu. Nisi consequat esse fugiat velit. Exercitation in adipisicing laboris mollit elit in est ad anim culpa voluptate. Magna sunt ut irure mollit eiusmod nisi. Non nisi magna aliqua deserunt aliqua quis amet proident labore laborum veniam ullamco velit.
+Consequat cillum aliqua enim quis laboris et. Culpa labore officia irure eiusmod
+ullamco nostrud cillum laborum qui Lorem labore ipsum eiusmod eu. Nisi consequat
+esse fugiat velit. Exercitation in adipisicing laboris mollit elit in est ad
+anim culpa voluptate. Magna sunt ut irure mollit eiusmod nisi. Non nisi magna
+aliqua deserunt aliqua quis amet proident labore laborum veniam ullamco velit.
 
-Do fugiat Lorem cupidatat qui excepteur ad est officia pariatur dolore adipisicing. Irure mollit veniam excepteur mollit in pariatur. Veniam minim amet est fugiat Lorem.
+Do fugiat Lorem cupidatat qui excepteur ad est officia pariatur dolore
+adipisicing. Irure mollit veniam excepteur mollit in pariatur. Veniam minim amet
+est fugiat Lorem.
 
-Lorem amet proident aute deserunt non fugiat tempor aliquip commodo do consectetur duis ut. Sit tempor aute quis duis eu deserunt consequat mollit cupidatat sunt sunt. Qui velit exercitation velit fugiat quis pariatur elit tempor do officia duis. Nostrud elit duis id elit.
+Lorem amet proident aute deserunt non fugiat tempor aliquip commodo do
+consectetur duis ut. Sit tempor aute quis duis eu deserunt consequat mollit
+cupidatat sunt sunt. Qui velit exercitation velit fugiat quis pariatur elit
+tempor do officia duis. Nostrud elit duis id elit.
 
-Nisi anim ipsum magna ex aliquip cillum aliqua duis. Ut ex incididunt occaecat cupidatat occaecat ullamco voluptate irure duis est. Anim nulla est aliquip enim esse id irure sint nisi ad eiusmod proident. Ullamco proident adipisicing adipisicing reprehenderit tempor aliquip cillum labore nulla voluptate sunt nostrud magna.
+Nisi anim ipsum magna ex aliquip cillum aliqua duis. Ut ex incididunt occaecat
+cupidatat occaecat ullamco voluptate irure duis est. Anim nulla est aliquip enim
+esse id irure sint nisi ad eiusmod proident. Ullamco proident adipisicing
+adipisicing reprehenderit tempor aliquip cillum labore nulla voluptate sunt
+nostrud magna.

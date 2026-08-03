@@ -11,4 +11,5 @@ by {author}
 Version number: {revnumber}
 Version date: {revdate}
 
-The cover background image is by https://unsplash.com/@anniespratt[Annie Spratt].
+The cover background image is by
+https://unsplash.com/@anniespratt[Annie Spratt].
