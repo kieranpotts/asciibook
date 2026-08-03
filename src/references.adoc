@@ -1,1 +1,6 @@
+[bibliography]
 = References
+
+* [[[ref1]]] Smith, John. _Advanced Documentation Techniques._ Tech Publications, 2024.
+* [[[ref2]]] Doe, Jane. _Markup Languages Compared._ Digital Press, 2023.
+* [[[asciidoc]]] Asciidoctor Team. _AsciiDoc Language Documentation._ https://asciidoc.org

@@ -557,6 +557,14 @@ This sentence references the previous footnote again.footnote:fn1[]
 
 The footnotes are printed at the end of the chapter (ie. they are implemented as endnotes).
 
+== Bibliography and citations
+
+Asciidoctor supports semantic https://docs.asciidoctor.org/asciidoc/latest/sections/bibliography/[bibliography] sections. The `[bibliography]` style is applied to a section containing a list of entries, and each entry starts with a `[[[id]]]` anchor that can be cited from anywhere in the book using the standard cross-reference syntax.
+
+This template's bibliography lives in `src/references.adoc`, which is included as the final chapter of the book.
+
+According to <<ref1>>, advanced documentation techniques are essential for technical writing. The <<asciidoc>> documentation provides comprehensive coverage of the language's features.
+
 Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing. Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud et nostrud veniam esse dolor.
 
 Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore incididunt aliquip pariatur cillum culpa anim.
