@@ -1,0 +1,6 @@
+= Abstract
+
+[abstract]
+--
+This book demonstrates a lightweight toolchain for authoring technical books from AsciiDoc source. It covers the project's file structure, document configuration, and the Docker-based build process used to compile PDF, EPUB, and HTML editions.
+--

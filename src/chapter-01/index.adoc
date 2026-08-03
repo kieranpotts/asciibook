@@ -589,6 +589,14 @@ Asciidoctor supports https://docs.asciidoctor.org/asciidoc/latest/sections/appen
 
 This template includes two example appendices, `src/appendix-a/index.adoc` and `src/appendix-b/index.adoc`, included immediately after the main chapters.
 
+== Abstract
+
+Asciidoctor has two different features named "abstract", and only one of them works with the `book` doctype that this template uses.
+
+The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract/[abstract section style] – applying `[abstract]` directly to a heading – only works on the first section of an `article` document. It's rejected by the `book` doctype.
+
+The https://docs.asciidoctor.org/asciidoc/latest/sections/abstract-block/[abstract block style], by contrast, is just a paragraph or open block styled with `[abstract]`, and it works in any doctype. This template uses the block style in `src/abstract.adoc`, an optional front-matter chapter included right after the dedication. Delete the file, and its `include::` line in `src/index.adoc`, if your book doesn't need one.
+
 Qui nulla est proident magna Lorem esse minim dolore magna elit ad adipisicing. Ullamco laboris amet in voluptate reprehenderit ex labore id cupidatat. Nostrud et nostrud veniam esse dolor.
 
 Fugiat dolore laborum sit laboris et occaecat do reprehenderit. Labore do aliqua ullamco consequat. Do incididunt elit voluptate eu dolore ea labore. Pariatur consectetur qui consectetur quis labore sit excepteur ullamco. Quis tempor sunt ipsum culpa amet anim nostrud irure in est ut adipisicing consequat aliqua. Elit irure ipsum amet labore eu ut eu. Qui consectetur minim officia labore incididunt aliquip pariatur cillum culpa anim.
