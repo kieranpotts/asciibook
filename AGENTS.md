@@ -69,9 +69,9 @@ This project follows Kieran Potts' technical standards. Read the relevant
 standard(s) below for the current task; their RFC 2119 rules MUST be
 followed unless explicitly overridden elsewhere in this file.
 
-- **[TS-9: Version Control](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/009/AGENTS.md)**
-- **[TS-25: Technical Documentation](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/025/AGENTS.md)**
-- **[TS-26: Technical Writing Style Guide](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/026/AGENTS.md)**
-- **[TS-28: AsciiDoc](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/028/AGENTS.md)**
-- **[TS-58: Docker](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/058/AGENTS.md)**
-- **[TS-60: GitHub Actions](https://raw.githubusercontent.com/kieranpotts/standards/refs/heads/latest/dev/src/modules/ROOT/partials/060/AGENTS.md)**
+- **[TS-9: Version Control](https://kieranpotts.com/standards/009)**
+- **[TS-25: Technical Documentation](https://kieranpotts.com/standards/025)**
+- **[TS-26: Technical Writing Style Guide](https://kieranpotts.com/standards/026)**
+- **[TS-28: AsciiDoc](https://kieranpotts.com/standards/028)**
+- **[TS-58: Docker](https://kieranpotts.com/standards/058)**
+- **[TS-60: GitHub Actions](https://kieranpotts.com/standards/060)**
