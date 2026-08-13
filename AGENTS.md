@@ -20,39 +20,39 @@ SHOULD NOT, OPTIONAL, and MAY are to be interpreted as described in
 
 ## Project structure
 
-- **`src/`** \
-  Book source. `index.adoc` is the root document; `chapter-NN/`,
+- `src/` \
+  Book source. `index.adoc` is the root document. `chapter-NN/`,
   `appendix-X/`, and front/back-matter files (`preface.adoc`,
   `foreword.adoc`, `dedication.adoc`, `glossary.adoc`, `references.adoc`,
   `colophon.adoc`, etc.) are included from it. `src/_/` holds shared
   assets: `images/`, `fonts/`, `themes/`.
 
-- **`dist/`** \
+- `dist/` \
   Build output (PDFs, EPUB, HTML). Generated, not committed.
 
-- **`run/`** \
+- `run/` \
   Build tooling: `start` (boots a detached, network-isolated Asciidoctor
   container), `build` (runs the four `docker exec` conversions into
   `dist/`), `stop` (stops the container).
 
-- **`docs/`** \
+- `docs/` \
   User-facing docs for consumers of this template: `requirements.md`,
   `get-started.md`, `source-files.md`, `configuration.md`, `building.md`.
 
-- **`.github/workflows/`** \
+- `.github/workflows/` \
   `generate-pdf.yaml` plus commit-message validation, stale-issue
   flagging, and label sync.
 
 ## Tools
 
-- **`./run/start`** to boot the Asciidoctor container (detached,
+- `./run/start` to boot the Asciidoctor container (detached,
   network-isolated, current working directory mounted at `/documents`).
 
-- **`./run/build`** to generate `book-screen-light.pdf`,
+- `./run/build` to generate `book-screen-light.pdf`,
   `book-screen-dark.pdf`, `book-print.pdf`, `book.epub`, and `book.html`
   into `dist/`.
 
-- **`./run/stop`** to stop the container.
+- `./run/stop` to stop the container.
 
 ## Rules
 
@@ -66,7 +66,7 @@ SHOULD NOT, OPTIONAL, and MAY are to be interpreted as described in
 ## References
 
 This project follows Kieran Potts' technical standards. Read the relevant
-standard(s) below for the current task; their RFC 2119 rules MUST be
+standard(s) below for the current task. Their RFC 2119 rules MUST be
 followed unless explicitly overridden elsewhere in this file.
 
 - **[TS-9: Version Control](https://kieranpotts.com/standards/009)**
