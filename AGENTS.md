@@ -65,13 +65,29 @@ SHOULD NOT, OPTIONAL, and MAY are to be interpreted as described in
 
 ## References
 
-This project follows Kieran Potts' technical standards. Read the relevant
-standard(s) below for the current task. Their RFC 2119 rules MUST be
-followed unless explicitly overridden elsewhere in this file.
+The following technical standards (TS) govern this project. Fetch and ingest
+the relevant standards as-and-when required for the task at hand.
 
-- **[TS-9: Version Control](https://kieranpotts.com/standards/009)**
-- **[TS-25: Technical Documentation](https://kieranpotts.com/standards/025)**
-- **[TS-26: Technical Writing Style Guide](https://kieranpotts.com/standards/026)**
-- **[TS-28: AsciiDoc](https://kieranpotts.com/standards/028)**
-- **[TS-58: Docker](https://kieranpotts.com/standards/058)**
-- **[TS-60: GitHub Actions](https://kieranpotts.com/standards/060)**
+- [**TS-9: Version Control**](https://kieranpotts.com/standards/009) \
+  Use when working with Git. Covers commits, branching, merging, integration
+  strategies, cutting releases, and configuring Git/PR/CI tooling.
+
+- [**TS-25: Technical Documentation**](https://kieranpotts.com/standards/025) \
+  Use when deciding what documentation a project needs, where it should live,
+  who it's for, or whether it's still trustworthy.
+
+- [**TS-26: Technical Writing Style Guide**](https://kieranpotts.com/standards/026) \
+  Use when writing or editing the prose of a technical document. Covers
+  tone-of-voice, headings, terminology, lists, and citations.
+
+- [**TS-28: AsciiDoc**](https://kieranpotts.com/standards/028) \
+  Use when writing or reviewing AsciiDoc documents or websites built using
+  Antora.
+
+- [**TS-58: Docker**](https://kieranpotts.com/standards/058) \
+  Use when designing Dockerfiles, building Docker images, or running Docker
+  containers.
+
+- [**TS-60: GitHub Actions**](https://kieranpotts.com/standards/060) \
+  Use when designing, authoring, reviewing, or securing GitHub Actions workflows
+  or custom actions.
