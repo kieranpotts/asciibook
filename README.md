@@ -27,6 +27,7 @@ This is a template repository for a lightweight toolchain for authoring technica
 - [Source files](./docs/source-files.md)
 - [Configuration](./docs/configuration.md)
 - [Building](./docs/building.md)
+- [Repository settings](./docs/development/repository-settings.md)
 
 ## Acknowledgements
 
